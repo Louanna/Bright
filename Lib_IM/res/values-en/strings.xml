@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lib_IM</string>
+    <string name="list_back_del">delete</string>
+    <string name="cancle">cancle</string>
+
+    <!-- chat -->
+    <string name="top_chat">Chat</string>
+    <string name="chat_send">Send</string>
+    <string name="chat_voice">Hold to talk</string>
+    <string name="chat_voice_send">Release to send</string>
+    <string name="voice_cancle_send_move">Slide up to cancel</string>
+    <string name="voice_cancle_send_up">Release to cancel</string>
+    <string name="voice_too_short">Message too short</string>
+    <string name="group_chat_del_exit">Leave &amp; Delete Group</string>
+    <string name="group_chat_dissove">Dismiss &amp; Delete Group</string>
+    <string name="chat_menu_pic">Images</string>
+    <string name="chat_menu_camera">Camera</string>
+    <string name="chat_menu_mail">Email</string>
+    <string name="chat_menu_location">Location</string>
+    <string name="chat_menu_vedio">Video chat</string>
+    <string name="chat_detail_title">Chat info</string>
+    <string name="chat_detail_no_men">Username Deleted</string>
+    <string name="chat_group_me">I：</string>
+    <string name="chat_for_clean">Empty chat record</string>
+    <string name="chat_for_search">Find chat content</string>
+    <string name="chat_type_pic">[Pic]</string>
+    <string name="chat_type_voice">[Audio]</string>
+    <string name="user_send_msg_btn">Chat</string>
+
+    <!-- chat -->
+    <string name="mark_unread">Mark Unread</string>
+    <string name="mark_read">Mark Read</string>
+    <string name="chat_menu_meeting">Meeting</string>
+    <string name="chat_menu_file">Files</string>
+    <string name="chat_menu_moblie_file">Mobile Files</string>
+    <string name="chat_menu_document">Document Manage</string>
+    <string name="chat_menu_send_location">Location</string>
+    <string name="chat_sending">Sending</string>
+    <string name="chat_send_fail">Send Failed</string>
+    <string name="chat_send_success">Successed</string>
+    <string name="chat_file_download">Download</string>
+    <string name="chat_file_no_download">unDownload</string>
+    <string name="chat_file_pop_download">Download</string>
+    <string name="chat_file_pop_downloading">Downloading</string>
+    <string name="chat_file_pop_open">Open</string>
+    <string name="chat_file_pop_forward">repost</string>
+    <string name="chat_file_pop_collection">Collect</string>
+    <string name="chat_location_fail">Get location information failed</string>
+
+    <!-- 修改组名 -->
+    <string name="no_name">unnamed</string>
+    <string name="show_room_all_members">group members</string>
+    <string name="toast_anonymous_group_can_not_see_members">Anonymous group cannot view users!</string>
+    <string name="toast_msg_not_findUser_str">No person</string>
+    <string name="room_name">GroupName</string>
+    <string name="group_all_members_title_str">GroupMembers</string>
+    <string name="scan_text">Align QR Code/barcode within frame to scan</string>
+
+    <string name="select_contacts">Contacts</string>
+    <string name="clicked_speak">Clicked and speak</string>
+    <string name="can_not_send_email">Anonymous group cannot initiate email!</string>
+    <string name="can_not_more_than_20m">The sending file cannot be over 20</string>
+    <string name="can_not_more_than_4m">The sending photo cannot be over 4</string>
+    <string name="finish">finish</string>
+    <string name="im_connect_failed">chat service: connect failed</string>
+    <string name="all">all(</string>
+    <string name="person"> person)</string>
+    <string name="failed_try_again">Request failed! Please try it again!(</string>
+    <string name="dissolve_success">You are already disband the group successfully.</string>
+    <string name="exit_success">You are aleady quit this group.</string>
+    <string name="chat_detail">chat details</string>
+    <string name="dissolve_group">Disband group</string>
+    <string name="delete_and_exit">delete and quit</string>
+    <string name="are_you_sure_to_dissolve_group">Are you sure to disband the group?</string>
+    <string name="are_you_sure_to_exit_group">Are you sure to quit the group?</string>
+    <string name="can_not_see_user_detail">Anonymous group cannot view users!</string>
+    <string name="admin_removed_you">You are already removed from the group by Admin.</string>
+
+    <string name="exit_group">Quit group!</string>
+    <string name="join_group"> Join in group!</string>
+    <string name="remove_group">Be moved from the group!</string>
+    <string name="admin_dissolve_success">Admin is already disband the group.</string>
+    <string name="boy">Man</string>
+    <string name="girl">Woman</string>
+
+    <string name="group_member_list">group members list</string>
+    <string name="call_you">\u0040 you</string>
+    <string name="group_name_changed">Group name is changed!</string>
+    <string name="my_group">my group</string>
+
+    <string name="phone">mobile phone</string>
+    <string name="telephone">Tel</string>
+    <string name="group_name">Group Name</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="saving">saving&#8230;</string>
+    <string name="please_input_right_phone_number">Please enter your mobile phone number correctly！</string>
+    <string name="please_input_right_telphone_number">Please enter your landline number correctly！</string>
+    <string name="group_name_empty">The groups name cannot be null!</string>
+    <string name="modify_group_name">changing group name&#8230;</string>
+    <string name="save_succeed">Save Successfully！</string>
+    <string name="save_failed">Save failed！</string>
+    <string name="admin_define">Admin Define</string>
+    <string name="development">Department</string>
+    <string name="bussiness">Business Level</string>
+    <string name="personal">Personal</string>
+    <string name="nick">Anonymous</string>
+    <string name="leave_group">You are not in the group.</string>
+    <string name="clear">Empty</string>
+    <string name="notification">Message</string>
+    <string name="loading">loading&#8230;</string>
+    <string name="invite_join_group">invite you to join in the groups</string>
+    <string name="agreed">agreed</string>
+    <string name="beremoved_from_group">Already removed from the group by Admin.</string>
+    <string name="exitd_group">quit the group</string>
+    <string name="me">me：</string>
+    <string name="content_error">disharmonious content</string>
+    <string name="join">Join in</string>
+    <string name="exited">quit</string>
+    <string name="admin_dissovled">Admin is already disband.</string>
+    <string name="refresh_time">refresh time:</string>
+    <string name="group_chat">Initiate group chat</string>
+    <string name="nick_group_chat">Anonymous group chat</string>
+    <string name="video_meeting">video conference</string>
+    <string name="nick_can_not_see_user_detail">Anonymous group cannot view user details</string>
+    <string name="send_failed_can_not_resend">Do not repost the file which is sent failed!</string>
+    <string name="download_office_app_first">Hello, please download office software associated with this attachement first.</string>
+
+    <string name="please_download_office_app_first">Hello, please download office software associated with this attachement first，WPS， Polaris Office</string>
+    <string name="network_break_please_check">Current network is disabled, please check it.</string>
+    <string name="sdcard_not_ready">Hello, the attachement cannot be downloaded because the card is not found. Please do confirm whether the card is inserted or not.</string>
+    <string name="downloading_app">downloading installation app&#8230;</string>
+    <string name="loading_attach">Loading attachment&#8230;</string>
+
+    <string name="etc"> ect </string>
+    <string name="unit_person"> person</string>
+
+</resources>

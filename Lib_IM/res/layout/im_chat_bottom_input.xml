@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="@dimen/dp_5" 
+        android:paddingRight="@dimen/dp_5"
+        android:paddingTop="@dimen/dp_8"
+        android:paddingBottom="@dimen/dp_8">
+
+        <Button
+            android:id="@+id/chat_voice"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@drawable/chat_voice_selector" />
+
+        <LinearLayout
+            android:id="@+id/chat_ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/chat_face"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:background="@drawable/chat_emotion_selector" />
+
+            <RelativeLayout
+                android:id="@+id/chat_rl_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5" >
+
+                <View
+                    android:id="@+id/chat_line"
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:background="#b3b3b6" />
+
+                <Button
+                    android:id="@+id/chat_addmore"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:background="@drawable/chat_addmore_selector"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/chat_send"
+                    android:layout_width="@dimen/dp_48"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/chat_send_btn"
+                    android:enabled="false"
+                    android:text="@string/chat_send"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/sp_13"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_toLeftOf="@+id/chat_ll_right"
+            android:layout_toRightOf="@id/chat_voice" >
+
+            <Button
+                android:id="@+id/chat_voice_speak_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerVertical="true"
+                android:background="@drawable/voice_btn_selector"
+                android:text="@string/chat_voice"
+                android:textColor="@color/chat_voice_text_color"
+                android:visibility="visible" />
+
+            <com.movit.platform.im.widget.CurEditText
+                android:id="@+id/chat_inputtext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/shape_chat_edit_text_bg"
+                android:gravity="center_vertical"
+                android:maxHeight="@dimen/dp_128"
+                android:minHeight="@dimen/dp_30"
+                android:paddingLeft="@dimen/dp_5"
+                android:textColor="@color/chat_edittext__color"
+                android:textSize="@dimen/sp_16"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#cacccf" />
+
+</RelativeLayout>

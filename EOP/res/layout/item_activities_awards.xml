@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_6"
+    android:paddingBottom="@dimen/dp_6"
+    android:paddingLeft="@dimen/dp_10"
+    android:paddingRight="@dimen/dp_10">
+
+    <ImageView
+        android:id="@+id/iv_awards_icon"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_awards_icon"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/tv_awards_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一等奖"
+            android:textColor="@color/text_color_2"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_prize_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="奖品名称"
+            android:textSize="@dimen/sp_13" />
+
+        <TextView
+            android:id="@+id/tv_awards_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未中" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_awards_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_toLeftOf="@+id/iv_arrow_r"
+        android:background="@drawable/icon_awards_num"
+        android:gravity="center"
+        android:text="12"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/sp_13" />
+
+    <ImageView
+        android:id="@+id/iv_arrow_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_awards_arrow_r" />
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<com.movit.platform.framework.widget.swipeLayout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe"
+    android:layout_width="fill_parent"
+    android:layout_height="64dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/member_more_btn"
+            android:layout_width="64dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center"
+            android:background="@color/list_item_back_text_1"
+            android:shadowColor="#7f000000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="1.5"
+            android:text="@string/list_back_more"
+            android:textColor="@android:color/white"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/member_del_btn"
+            android:layout_width="64dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center"
+            android:background="@color/list_item_back_text_2"
+            android:shadowColor="#7f000000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="1.5"
+            android:text="@string/list_back_del"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/m_list_item_selector"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/member_item_icon"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/member_item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/member_item_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/member_item_icon"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/list_text_title"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/member_item_department"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/member_item_icon"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@id/member_item_icon"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:paddingTop="1dp"
+            android:singleLine="true"
+            android:textColor="@color/list_text_subTitle"
+            android:textSize="14dp" />
+    </RelativeLayout>
+
+</com.movit.platform.framework.widget.swipeLayout.SwipeLayout>

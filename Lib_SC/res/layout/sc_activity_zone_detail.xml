@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/common_top_layout"
+        layout="@layout/comm_topbar_style_3" />
+
+    <com.movit.platform.framework.widget.xlistview.XListView
+        android:id="@+id/zone_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/common_top_layout"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:listSelector="#00000000" />
+
+    <LinearLayout
+        android:id="@+id/zone_bottom_rootview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <include layout="@layout/sc_zone_input_bottom" />
+
+        <include layout="@layout/comm_bottom_face" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noSay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="说说已被删除"
+        android:textColor="@color/user_detail_subname_color"
+        android:textSize="@dimen/sp_24"
+        android:visibility="gone" />
+
+</RelativeLayout>

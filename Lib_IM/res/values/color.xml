@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="chat_bottom_line">#a7a7a7</color>
+    <color name="chat_send_btn_color">#36B559</color>
+    <color name="chat_send_btn_bound_color">#31A250</color>
+    <color name="chat_edittext__color">@color/list_text_title_for_contac</color>
+    <color name="chat_edittext_bound_color">#bdbdbd</color>
+    <color name="chat_voice_bg_color">#f2f2f2</color>
+    <color name="chat_voice_text_color">@color/list_text_subTitle_for_contact</color>
+    <color name="chat_time_text_color">#969696</color>
+    <color name="chat_avatar_bound_color">#bcbcbc</color>
+    <color name="chat_time_bg_color">#D5D5D5</color>
+    <color name="chat_bg_color">#f0f0f0</color>
+    <color name="chat_voice_cancle_send_color">#b1b1b1</color>
+    <color name="chat_menu_text_color">#494949</color>
+    <color name="black_0">#262626</color>
+    <color name="trans_color">#00000000</color>
+</resources>

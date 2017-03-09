@@ -1,0 +1,463 @@
+<resources>
+    <string name="app_name">EOP</string>
+
+    <string name="message_user_disabled">Users are prohibited</string>
+    <string name="message_user_expired">Account has expired</string>
+    <string name="message_userip_no_access">IP is prohibited</string>
+
+    <!-- 主界面tab top -->
+    <string name="tab_chat">Chat</string>
+    <string name="tab_contact">Contacts</string>
+    <string name="tab_colleague">Buzz</string>
+    <string name="tab_setting">Me</string>
+    <string name="tab_home">Home</string>
+
+    <string name="top_info">Personal Data</string>
+    <string name="top_chat">Chat</string>
+    <string name="top_contact">Contacts</string>
+    <string name="tab_office">Mobile office</string>
+    <string name="no_email_address_for_org">No contacts or selected contacts were not selected.</string>
+
+    <string name="net_error_tip">The current network is not available. Please check your network settings.</string>
+    <string name="gps_syn">Synchronize Successfully!Synchronized</string>
+    <string name="gps_syn_count">data</string>
+    <string name="gps_syn_failed">No synchronize to data</string>
+    <string name="gps_calendar_status_normal">Punctual</string>
+    <string name="gps_calendar_status_late">Late/Leave Early</string>
+    <string name="gps_calendar_status_none">Incomplete</string>
+    <string name="gps_calendar_no_record">No Records</string>
+    <string name="gps_calendar_record">My Records</string>
+    <string name="gps_selected_day">Selected Day</string>
+    <string name="gps_calendar_record_first">Start Work&#160;:&#160;</string>
+    <string name="gps_calendar_record_last">End Work&#160;:&#160;</string>
+    <string name="dialog_syn_ing">Synchronizing data…</string>
+    <string name="dialog_do_gps_ing">Check in/out</string>
+    <string name="gps_in_location">You already enter in valid range.</string>
+    <string name="gps_out_location">Please clock in/out within range.</string>
+    <string name="gps_alarm_first">Start Work Reminder：</string>
+    <string name="gps_alarm_last">End Work Reminder：</string>
+    <string name="gps_alarm_reset">Reset</string>
+    <string name="gps_alarm_info">Time to start work! Please remember to clock in.</string>
+    <string name="gps_alarm_info_1">It\'s almost time to end work. Please remember to clock out.</string>
+    <string name="gps_do_failed_info">Clock in Failed,\nplease check your network.</string>
+    <string name="gps_do_time">This Clock-in/out Time</string>
+    <string name="dialog_gps_open_info">Please open the accurate GPS location service to use the GPS card function</string>
+    <string name="toast_msg_clock_prompt_str">Please select historical</string>
+    <string name="dialog_msg_notificaiton_open_prompt_str">Please confirm open notice (to receive RiTeBOS message timely)</string>
+
+    <!-- 登录提示 -->
+    <string name="login_hint_account">Please enter a username</string>
+    <string name="login_hint_passward">Please enter your password</string>
+    <string name="copyright">Copyright © 2015 RITEBOS All rights reserved</string>
+    <string name="version">v0.2 Internal trial</string>
+    <string name="company">@string/app_name</string>
+    <string name="remember_pwd_str">Remember me</string>
+    <string name="auto_login_str">Auto Login</string>
+    <string name="regist">Regist</string>
+    <string name="login">Login</string>
+    <string name="login_ing">Login&#8230;</string>
+    <string name="login_down_db">The documents is downloading&#8230;</string>
+    <string name="message_invalid_username_password">Invalid username or password, please try again.</string>
+    <string name="message_server_unavailable">Network error</string>
+    <string name="unrecoverable_error">Unknown, connection failed</string>
+    <string name="message_not_find_person">None username; please contact admin</string>
+    <string name="message_down_db_failed">Document download failed</string>
+    <string name="login_repassword">Please change password</string>
+    <string name="logout">Logoff</string>
+    <string name="device">DeviceID</string>
+    <!-- dialog -->
+    <string name="dialog_version_update">Updates</string>
+    <string name="dialog_update_msg"/>
+    <string name="dialog_update">Update Now</string>
+    <string name="dialog_ignore">Ignore</string>
+    <string name="dialog_voice_permisson">Permission prompt</string>
+    <string name="dialog_voice_permisson_msg">The microphone no sound, try in the mobile phone application settings - > - > set the recording with “allowed” in RiTeBOSEn’s permission management</string>
+    <string name="dialog_xmpp_login_error">Network error. Please try again.</string>
+    <string name="dialog_xmpp_msg_error">Network error. Please try again.</string>
+    <string name="dialog_loding">Loading&#8230;</string>
+    <string name="dialog_refreshing">Refreshing&#8230;</string>
+    <string name="dialog_pleast_wait">Loading&#8230;</string>
+
+    <string name="dialog_send_comments">Add comments&#8230;</string>
+    <string name="dialog_clear_cache">Cleaning&#8230;</string>
+    <string name="dialog_clear_mdm">After the release of binding, this device will be the default to join the blacklist, you will not be able to use this device to log on to APP, if you need to contact the admin to confirm the release of binding?</string>
+    <string name="dialog_net_error">Network failed. Please connect again.</string>
+    <string name="dialog_title">Prompt</string>
+    <string name="dialog_net_message">Network failed. Please connect again.</string>
+    <string name="dialog_setting">Settings</string>
+    <string name="dialog_close">Close</string>
+    <string name="dialog_check_sdcard">Please check memory card</string>
+    <string name="dialog_exit">Exit</string>
+    <string name="dialog_choose_email_app">Please select the email app</string>
+    <string name="dialog_attendance_uploading">Uploading&#8230;</string>
+    <string name="dialog_group_leave">You have quit</string>
+    <string name="dialog_should_dissove_group">Are you sure you are dismissing the group?</string>
+    <string name="dialog_should_exit_group">Are you sure you want to quit?</string>
+    <string name="dialog_dissove_group_success">The group is dismissed!</string>
+    <string name="dialog_admin_dissove_group">Admin dismissed</string>
+    <string name="dialog_saveing">Saving&#8230;</string>
+    <string name="dialog_rename_group_ing">Loading&#8230;</string>
+    <string name="dialog_member_adding">Loading&#8230;</string>
+    <string name="dialog_group_creating">Loading&#8230;</string>
+    <string name="dialog_get_groupinfo">Loading&#8230;</string>
+    <string name="dialog_publishing">Loading&#8230;</string>
+
+    <!-- toast -->
+    <string name="toast_exit">Double click exit app</string>
+    <string name="toast_getinfo_failed">Failed!</string>
+    <string name="toast_login_failed">Login Failed!</string>
+    <string name="toast_building">Building&#8230;</string>
+    <string name="toast_praise_failed">Failed!</string>
+    <string name="toast_comments_failed">Failed!</string>
+    <string name="toast_delete_failed">Failed!</string>
+    <string name="toast_has_not_sdcard">Could not find SD card</string>
+    <string name="toast_avatar_upload_failed">Failed!</string>
+    <string name="toast_clear_cache_successd">Clean</string>
+    <string name="toast_clear_mdm_success">Successfully!</string>
+    <string name="toast_clear_mdm_failed">Failed!</string>
+    <string name="toast_no_app">The app is not installed!</string>
+    <string name="toast_attendance_reason">Please fill in reason</string>
+    <string name="toast_attendance_input_max">Input up to 50 words!</string>
+    <string name="toast_attendance_1_photo">Please upload at least 1 photo!</string>
+    <string name="toast_attendance_location">Please locate first!</string>
+    <string name="toast_bdo_cloud_info_error">Failed!</string>
+    <string name="toast_failed_do_again">Unsuccessful. Please try again.</string>
+    <string name="toast_join_group">&#160;Join Group!</string>
+    <string name="toast_kicked_group">&#160;Moved out of the group</string>
+    <string name="toast_leave_group">&#160;quits!</string>
+    <string name="toast_group_name_change">Successful</string>
+    <string name="toast_scan_error">Scan error !</string>
+    <string name="toast_input_real_phone">Please enter a correct number</string>
+    <string name="toast_input_real_office_phone">Please enter a correct land line</string>
+    <string name="toast_input_null_groupname">Group name cannot be blank</string>
+    <string name="toast_rename_group_failed">Change group name failed</string>
+    <string name="toast_saveing_success">Saved successfully!</string>
+    <string name="toast_saveing_failed">Saved failed!</string>
+    <string name="toast_password_not_agree">new password is not consistent with two inserts</string>
+    <string name="toast_password_old_error">Old password invalid</string>
+    <string name="toast_password_change_success">Password change successfully!</string>
+    <string name="toast_password_change_failed">Password change failed!</string>
+    <string name="toast_input_suggestion">Please insert you suggestions</string>
+    <string name="toast_send_success">Send successfully!</string>
+    <string name="toast_not_in_group">You are no longer in the group</string>
+    <string name="toast_create_group_failed">Sorry, failed to create!</string>
+    <string name="toast_invite_failed">Sorry, failed to invitation!</string>
+    <string name="toast_refresh_success">Refreshing successfully!</string>
+    <string name="toast_refresh_failed">Refreshing failed!</string>
+    <string name="toast_loading_failed">Load failed!</string>
+    <string name="toast_call_phone_limit">Your calls number has exceeded the limit</string>
+    <string name="toast_no_phone">No number information</string>
+    <string name="toast_attention_failed">Error. Please try again.</string>
+    <string name="toast_attention_cancle_failed">Error. Please try again.</string>
+    <string name="toast_get_groupinfo_failed">Failed</string>
+    <string name="toast_clear_failed">Clean Failed</string>
+    <string name="toast_publish_success">Complete</string>
+    <string name="toast_publish_failed">Failed</string>
+    <string name="toast_net_error">Network connection exception</string>
+    <string name="toast_upload_failed">Documents upload failed </string>
+    <string name="toast_get_info_failed">Information access failed</string>
+    <string name="toast_net_error_offline">Connection failed. Please connect again.</string>
+
+    <!-- chat record -->
+    <string name="chatrecord_tips">Drop-down, syn your chat records of 60 days from the server</string>
+    <string name="chatrecord_sysmsg_kicked">You have been moved out of the group by the admin</string>
+    <string name="chatrecord_sysmsg_invite">&#160;Invite you to join&#160;</string>
+    <string name="chatrecord_sysmsg_join">&#160;join&#160;</string>
+    <string name="chatrecord_sysmsg_leave">&#160;quit&#160;</string>
+    <string name="chatrecord_sysmsg_dissove">Admin dismissed&#160;</string>
+    <string name="refresh_time">The last update:</string>
+    <string name="refresh_tips">Synchronizing your records!</string>
+    <string name="chatrecord_sysmsg">Note</string>
+    <string name="sysmsg_invite_group">&#160;invite you to join group</string>
+    <string name="sysmsg_agreed">Accept</string>
+    <string name="sysmsg_join_group">&#160;joined group</string>
+    <string name="sysmsg_kicked_group">Admin removed&#160;</string>
+    <string name="sysmsg_leave_group">&#160;quits</string>
+
+    <!-- contact -->
+    <string name="contact_str">Search Results</string>
+    <string name="contact_my_attention">Favourites</string>
+    <string name="contact_create_chat">New</string>
+    <string name="contact_to_groupchat">Chat</string>
+    <string name="contact_to_email">Email</string>
+    <string name="contact_orgunition">All Contacts</string>
+    <string name="contact_group">My Group Chats</string>
+    <string name="contact_public">Public number</string>
+    <string name="contact_attention">My Following</string>
+    <string name="contact_choose_15_max">Only 15 users can be chosen at one time</string>
+    <string name="contact_create_group">Groups created</string>
+    <string name="user_detail_title">Detail</string>
+    <string name="user_detail_beattention">Favourite</string>
+    <string name="user_detail_cancle_attention"/>
+    <string name="group_type_admin">Admin</string>
+    <string name="group_type_department">Depart</string>
+    <string name="group_type_task">Task</string>
+    <string name="group_type_person">personal</string>
+    <string name="contact_no_attention">No Following</string>
+
+    <!-- office worktable -->
+    <string name="worktable_oa">My OA</string>
+    <string name="worktable_timesheet">TimeSheet</string>
+    <string name="worktable_news">News bulletin</string>
+    <string name="worktable_scan">Scan</string>
+    <string name="worktable_download">Download</string>
+    <string name="worktable_scan_title">Scan results</string>
+    <string name="webview_to_choose">Select contacts</string>
+    <string name="worktable_setting_title">EOP</string>
+    <string name="worktable_available_app">Application in use</string>
+    <string name="worktable_disable_app">Closed application</string>
+
+    <!-- collegues  zone -->
+    <string name="zone_attention">follow</string>
+    <string name="zone_canlook">In order to view the circle of colleagues</string>
+    <string name="zone_comments">Comments&#160;</string>
+    <string name="zone_reply">Reply：</string>
+    <string name="zone_has_delete">Deleted! </string>
+    <string name="zone_detail_title">Activity</string>
+    <string name="zone_my_page">My Page</string>
+    <string name="zone_other_page">Buzz</string>
+    <string name="zone_msg_total">&#160;</string>
+    <string name="zone_msg_count">&#160;Notifications;&#160;</string>
+    <string name="zone_msg_counts">&#160;Notifications;&#160;</string>
+    <string name="no_unread_comments">&#160;No unread Notifications;</string>
+    <string name="zone_msg_unred">&#160;Unread</string>
+    <string name="zone_msg_clear">Notifications</string>
+    <string name="zone_publish_hint">Share what\'s on your mind..</string>
+    <string name="zone_share">Share</string>
+    <string name="zone_publish">New</string>
+    <string name="zone_open">open</string>
+    <string name="zone_secret">secret</string>
+    <string name="zone_life">life</string>
+    <string name="zone_work">work</string>
+    <string name="zone_praise_num">&#160;like</string>
+    <string name="zone_praise_nums">&#160;likes</string>
+    <string name="zone_comment_deteled">Comments have been deleted</string>
+    <string name="zone_reply2">&#160;replied&#160;</string>
+    <string name="zone_msg_comment">&#160;commented</string>
+    <string name="zone_msg_at">\@ me</string>
+    <string name="zone_msg_praise">&#160;liked</string>
+
+    <!-- my user setting -->
+    <string name="user_title">My Profile</string>
+    <string name="user_zone_count">Buzz</string>
+    <string name="user_attention_count">Following</string>
+    <string name="user_be_attention_count">Followers</string>
+    <string name="user_empid">Employee NO.</string>
+    <string name="user_city">City</string>
+    <string name="user_objname">Department</string>
+    <string name="user_jobtitle">Rank</string>
+    <string name="user_jobtitle_2">Employee ID</string>
+    <string name="user_phone">Mobile</string>
+    <string name="user_office_phone">Office Line</string>
+    <string name="user_mail">Email</string>
+    <string name="user_setting_info_password">Change Password</string>
+    <string name="user_setting_gesture">gesture</string>
+    <string name="user_setting_clearcache">Clear Cache</string>
+    <string name="user_setting_language">Language</string>
+    <string name="user_setting_suggest">Feedbacks</string>
+    <string name="user_setting_suggest_tips"/>
+    <string name="user_setting_service_center">Customer service center</string>
+    <string name="user_setting_mdm">Remove binding</string>
+
+    <!--  -->
+    <string name="user_setting_info_detail">(Password modification, mobile phone binding)</string>
+    <string name="user_setting_yinsi">Privacy settings</string>
+    <string name="user_setting_yanzheng">Authentication switch configuration entry</string>
+    <string name="user_setting_other">Other settings</string>
+    <string name="user_setting_update">Check for updates</string>
+
+    <!-- Gesture code starting -->
+    <string name="gesture_code">手势密码</string>
+    <string name="setup_gesture_code">设置手势密码</string>
+    <string name="setup_gesture_pattern">请绘制解锁图案</string>
+    <string name="setup_gesture_pattern_again">请再次绘制解锁图案</string>
+    <string name="setup_gesture_pattern_4_limit">至少连接4个点, 请重新输入</string>
+    <string name="setup_gesture_pattern_again_error">与上一次绘制不一致，请重新绘制</string>
+    <string name="modify_gesture_code">修改手势密码</string>
+    <string name="forget_gesture_code">忘记手势密码</string>
+    <string name="use_other_account_login">用其他账号登录</string>
+    <string name="reset_gesture_code">重新设置手势密码</string>
+    <string name="gesture_error_count">密码错误，还可以输入%1$d次</string>
+    <string name="setup_input_old_gesture_code">请输入原手势密码</string>
+    <!-- End -->
+
+    <!-- 修改组名,手机号，座机。。。。 密码 -->
+    <string name="no_name">Not named</string>
+    <string name="room_name">Group Title</string>
+    <string name="user_setting_info_old_password">Current</string>
+    <string name="user_setting_info_new_password">New</string>
+    <string name="user_setting_info_confirm_password">Confirm</string>
+    <string name="user_setting_info_password_tips">Note:Passwords should be 6 to 12 characters in length, including the following characters at least: \n① English Capital Letters (A to Z)\n② English Lowercase Letters (a to z)\n③ 10 digital (0 to 9)</string>
+    <string name="user_setting_info_password_tips2">Passwords should be 6 to 12 characters in length, including the following characters at least: \n① English Capital Letters (A to Z)\n② English Lowercase Letters (a to z)\n③ 10 digital (0 to 9)</string>
+    <string name="example">eg.021&#8211;12345678</string>
+
+    <!-- 开心考勤 -->
+    <string name="carsing_attendance_reason">Title</string>
+    <string name="carsing_attendance_reason_input">Please fill in reason</string>
+    <string name="carsing_attendance_location">Place</string>
+    <string name="carsing_attendance_location_input">Getting the location…</string>
+    <string name="carsing_attendance_time">Time</string>
+    <string name="carsing_attendance_photo">Upload Photos</string>
+    <string name="carsing_attendance_create">Create</string>
+    <string name="carsing_attendance_info_my">My Attendance Record</string>
+    <string name="carsing_attendance_info_other">Subordinate’s Attendance Record</string>
+    <string name="carsing_attendance">Outstation</string>
+
+    <!-- take photo -->
+    <string name="take_photo_in">Your choice the</string>
+    <string name="take_photo_error">Picture error!</string>
+    <string name="take_photo_upload_seccess">Upload Successfully!</string>
+    <string name="take_photo_upload_failed">upload failed!</string>
+    <string name="take_photo_upload_failed_num">picture upload failed!</string>
+    <string name="take_txt">Text</string>
+    <string name="photo">Picture</string>
+    <string name="photo_camera">Take a picture</string>
+    <string name="photo_picker">Select from album</string>
+    <string name="photo_picked_max">9 pictures can be upload at most</string>
+    <string name="photo_preview">Overview</string>
+    <string name="photo_be_loading">The picture has not been loaded. Please try again later!</string>
+    <string name="photo_be_saved">Picture has been saved to phone!</string>
+    <string name="photo_be_saved_failed">Picture save failed!</string>
+
+    <!-- main page -->
+    <string name="tab_check">Process approval</string>
+    <string name="tab_report">My attendance</string>
+    <string name="tab_meetting">My meeting</string>
+    <string name="tab_schedule">Process responsibility</string>
+    <string name="tab_esp">Ecosystem platform</string>
+    <string name="tab_timesheet">Timesheet</string>
+    <string name="tab_suggestion">My suggestion</string>
+    <string name="popwindow_pending">signed</string>
+    <string name="popwindow_top">Top chat</string>
+    <string name="cancle">Cancel</string>
+    <string name="confirm">OK</string>
+    <string name="complete">Complete</string>
+    <string name="save">OK</string>
+    <string name="submit">Submit</string>
+    <string name="clear">Clear</string>
+    <string name="search">Search</string>
+    <string name="deng">&#160;etc.</string>
+    <string name="ren"/>
+    <string name="suggestion_tips">Any questions, please submit, pictures are preferred to deal the problems ASAP</string>
+    <string name="allphotos">All Photos</string>
+    <string name="scan_text">Align QR code within frame to scan</string>
+
+    <!-- list -->
+    <string name="list_back_more">More</string>
+    <string name="list_back_del">Delete</string>
+
+    <!-- user -->
+    <string name="user_setting_info">Personal information setting</string>
+    <string name="user_setting_update_orgunition">Update organization structure</string>
+    <string name="group_create_cn">Chinese</string>
+    <string name="group_create_en">English</string>
+    <string name="group_create_attention">My Following</string>
+
+    <!-- 默认的viewpageIndicator -->
+    <bool name="default_circle_indicator_centered">true</bool>
+    <color name="default_circle_indicator_fill_color">#ff298ecb</color>
+    <color name="default_circle_indicator_page_color">#ff777777</color>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+
+    <!-- 上拉下拉 -->
+    <string name="xlistview_header_hint_normal">Drop down loading</string>
+    <string name="xlistview_header_hint_ready">Loosen view</string>
+    <string name="xlistview_header_hint_loading">Loading&#8230;</string>
+    <string name="xlistview_header_last_time">The last update：</string>
+    <string name="xlistview_footer_hint_normal">More</string>
+    <string name="xlistview_footer_hint_ready">Release load more</string>
+    <string name="pull_to_refresh_pull_label">Drop down loading</string>
+    <string name="pull_to_refresh_release_label">Loosen after refresh</string>
+    <string name="pull_to_refresh_refreshing_label">Refreshing&#8230;</string>
+    <string name="pull_to_refresh_footer_release_label">Release after loading</string>
+    <string name="pull_to_refresh_footer_pull_label">Pull up load more</string>
+    <string name="pull_to_refresh_footer_refreshing_label">Loading&#8230;</string>
+
+    <string name="send_email">SendEmail</string>
+    <string name="scan">Scan</string>
+    <string name="scan_error">Scan Error</string>
+    <string name="download_app">Download</string>
+    <string name="sign_error">Sign Error</string>
+    <string name="get_messages_error">Get messages error</string>
+    <string name="loading">Load&#8230;</string>
+    <string name="username_and_password_can_not_null">Username and password can not null</string>
+    <string name="clicked_again_for_exit">licked again for exit</string>
+    <string name="config_servers">Config servers</string>
+    <string name="participant_activities">Participant activities</string>
+    <string name="lucky">Lucky</string>
+    <string name="unlucky">Unlucky</string>
+    <string name="phone_num">Phone</string>
+    <string name="lucky_name">Lucky names</string>
+    <string name="from">From</string>
+    <string name="lucky_draw">Lucky draw</string>
+    <string name="reset">Reset</string>
+    <string name="my_attention">Followed</string>
+    <string name="attention_me">Follow me</string>
+    <string name="finish">finish</string>
+    <string name="password_rule">Password can only contain num,letter</string>
+    <string name="password_different">Password different</string>
+    <string name="password_error">Password Error</string>
+    <string name="password_modify_success">Succeed！</string>
+    <string name="password_modify_error">Failed！</string>
+
+    <string name="clearing">Clearing&#8230;</string>
+    <string name="after_unband">Unband？</string>
+    <string name="waiting">Please wait&#8230;</string>
+    <string name="uploading">uploading</string>
+    <string name="upload_avatar_error">Avatar upload error!</string>
+    <string name="avatar_name_error">Avatar updata error!</string>
+
+    <string name="unband_succeed">Succeed！</string>
+    <string name="unband_failed">Failed！</string>
+    <string name="clear_succeed">Succeed</string>
+    <string name="share_succeed">Succeed！</string>
+    <string name="share_failed">Failed！</string>
+    <string name="picture_upload_failed">Failed！</string>
+    <string name="commit">commit</string>
+    <string name="please_input_your_suggestion">Please input your suggestion</string>
+    <string name="scan_result">Scan</string>
+    <string name="movit_bpm">Movit BPM</string>
+    <string name="save_succeed">Save Succeed</string>
+    <string name="save_failed">Save Failed</string>
+    <string name="saving">Save&#8230;</string>
+    <string name="config_worktable">Config worktable</string>
+
+    <string name="useful">Useful</string>
+    <string name="unUseful">Unuseful</string>
+    <string name="create">Create</string>
+    <string name="please_input_reason">Please input reason！</string>
+    <string name="can_not_more_than_fifty">Fifty at most！</string>
+    <string name="please_upload_one_pic_at_least">Please upload one picture at least！</string>
+    <string name="upload_innear_info">Upload&#8230;</string>
+    <string name="you_take_picture_num">Picture</string>
+    <string name="picture_error">Error!</string>
+    <string name="upload_succeed">Upload Succeed！</string>
+    <string name="upload_failed">Upload Failed！</string>
+    <string name="picture_failed">Failed！</string>
+    <string name="meeting">Meeting</string>
+
+    <string name="str_chinese">简体中文</string>
+    <string name="str_english">English</string>
+    <string name="str_change_language">You will be logged out after language changes</string>
+
+    <string name="tv_visitor">guest log-in</string>
+    <string name="tv_server">select a server</string>
+    <string name="activities_list_error">activity list query error</string>
+    <string name="awards_list_error">awards list query error</string>
+    <string name="winner_list_error">winner list query error</string>
+    <string name="lucky_draw_people">lottery drawer</string>
+    <string name="verify_gesture_code">verify gesture password</string>
+    <string name="gesture_code_invalid">Gesture password invalid, please use your account and password to log in.</string>
+    <string name="forget_gesture_code_invalid">Gesture password forgot, please use your account and password to log in.</string>
+    <string name="get_group_message">getting group information&#8230;</string>
+    <string name="get_group_message_error">getting group information error！</string>
+    <string name="contacts_is_self">The contact is yourself.</string>
+    <string name="user_is_not_exist">The user does not exist!</string>
+    <string name="register_success">register successfully</string>
+    <string name="recommendation_describes">If you have any problems when using this system, please submit here. Tips: add a picture as possible for quick processing.</string>
+
+</resources>

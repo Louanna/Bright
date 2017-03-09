@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/process_bg_color">
+    <include layout="@layout/comm_topbar_style_4"/>
+    <LinearLayout
+        android:id="@+id/ll_early_warning"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:background="@color/white" >
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_not_do"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/clipboard_text_on"
+                android:drawableStart="@drawable/clipboard_text_on"
+                android:drawablePadding="@dimen/dp_5"
+                android:text="@string/not_do"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold"
+                android:onClick="onTipClick"
+                android:clickable="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_done"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/ico_yiban"
+                android:drawableStart="@drawable/ico_yiban"
+                android:drawablePadding="@dimen/dp_5"
+                android:gravity="center"
+                android:text="@string/done"
+                android:textSize="@dimen/sp_17"
+                android:textStyle="bold"
+                android:onClick="onTipClick"
+                android:clickable="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <com.movitech.EOP.view.UnderlinePageIndicator
+        android:id="@+id/process_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lib_SC</string>
+    <string name="send">发送</string>
+    <string name="confirm">确定</string>
+    <string name="top_zone">同事圈</string>
+    <string name="send_zone">发表日志</string>
+    <string name="zone_content">说说内容不能为空</string>
+    <string name="zone_msg">动态消息</string>
+    <string name="zone_clear">清空</string>
+
+
+    <string name="attention_to_look">关注%1$s后才能查看同事圈</string>
+    <string name="like_fail">点赞失败！</string>
+    <string name="comment">评论</string>
+    <string name="send_comment">发表评论&#8230;</string>
+    <string name="comment_fail">发表评论失败！</string>
+    <string name="reply">回复：</string>
+    <string name="del_fail">删除失败！</string>
+    <string name="del_success">删除成功！</string>
+    <string name="get_message_fail">消息获取失败！</string>
+    <string name="picture">图片</string>
+    <string name="preview">预览</string>
+    <string name="complete">完成</string>
+    <string name="most_upload_9">您最多可上传9张图片</string>
+    <string name="upload_fail">张图片上传失败！</string>
+    <string name="picture_error">您选择的第%1$s图片有误!</string>
+    <string name="photo">拍照</string>
+    <string name="how_many_message">共有%1$s条消息，%2$s条未读</string>
+    <string name="empty_fail">清空失败！</string>
+    <string name="empty">清空</string>
+    <string name="news_feed">动态消息</string>
+    <string name="commented_on_my_article">评论了我的文章</string>
+    <string name="at_me">了我</string>
+    <string name="approve_my_article">赞了我的文章</string>
+    <string name="my_home_page">我的主页</string>
+    <string name="home_page">个人主页</string>
+    <string name="bg_sync_fail">同事圈背景图同步失败！</string>
+    <string name="send_success">发表成功！</string>
+    <string name="send_fail">发表失败！</string>
+    <string name="str_public">公开</string>
+    <string name="str_private">私密</string>
+    <string name="str_life">生活</string>
+    <string name="str_work">工作</string>
+    <string name="most_upload_one_video">最多只能上传一个小视频</string>
+    <string name="posting">正在发表&#8230;</string>
+    <string name="like_over_people">人赞过</string>
+    <string name="commented_is_del">该条评论已被删除！</string>
+
+
+
+</resources>

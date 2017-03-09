@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SendMailActivity">
+
+    <RelativeLayout
+        android:id="@+id/common_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_44"
+        android:background="@color/top_bg_color">
+
+        <TextView
+            android:id="@+id/common_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/dp_200"
+            android:singleLine="true"
+            android:text="@string/write_email"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_20" />
+
+        <ImageView
+            android:id="@+id/common_top_left"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/top_back" />
+
+        <TextView
+            android:id="@+id/common_top_txt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/send"
+            android:textColor="@color/m_top_right_text_color_selector"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="@string/recipient"
+                    android:textSize="@dimen/sp_14"
+                    android:layout_gravity="center_vertical"/>
+
+                <com.movit.platform.mail.ui.view.RecipientSelectView
+                    android:id="@+id/edit_recipients"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:textSize="@dimen/sp_16"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:id="@+id/img_add_receiver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:src="@drawable/icon_email_add"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/grey" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="@string/cc"
+                    android:textSize="@dimen/sp_14"
+                    android:layout_gravity="center_vertical"/>
+
+                <com.movit.platform.mail.ui.view.RecipientSelectView
+                    android:id="@+id/edit_cc"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:textSize="@dimen/sp_16"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:id="@+id/img_add_cc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_email_add"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp_6"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/grey" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:text="@string/bcc"
+                    android:textSize="@dimen/sp_14"
+                    android:layout_gravity="center_vertical"/>
+
+                <com.movit.platform.mail.ui.view.RecipientSelectView
+                    android:id="@+id/edit_bcc"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:textSize="@dimen/sp_16"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:id="@+id/img_add_bcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_email_add"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/dp_6"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/grey" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/edit_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/sp_16"
+                    android:hint="@string/subject"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                    android:id="@+id/img_add_attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_6"
+                    android:src="@drawable/icon_add_attachment"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@color/grey" />
+
+            <com.movit.platform.mail.ui.view.EolConvertingEditText
+                android:id="@+id/message_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:hint="@string/message_compose_content_hint"
+                android:textSize="@dimen/sp_15"
+                android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+                android:imeOptions="actionDone|flagNoEnterAction"
+                android:minLines="3" />
+
+            <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <com.movit.platform.mail.ui.view.EolConvertingEditText
+                android:id="@+id/quoted_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:minLines="3"
+                android:inputType="textMultiLine|textAutoCorrect|textCapSentences"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone"/>
+
+            <com.movit.platform.mail.ui.view.MessageWebView
+                android:id="@+id/quoted_html"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

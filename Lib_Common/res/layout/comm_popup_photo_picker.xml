@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/popwindow_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rl_take_txt"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginBottom="@dimen/dp_8" >
+
+                <Button
+                    android:id="@+id/btn_take_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@drawable/btn_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/photo_txt_a"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="@string/take_txt"
+                    android:textColor="@color/black_0"
+                    android:textSize="@dimen/sp_20" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_take_camera"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44" >
+
+                <Button
+                    android:id="@+id/btn_take_photo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@drawable/btn_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/photo_camera_a"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="@string/photo_camera"
+                    android:textColor="@color/black_0"
+                    android:textSize="@dimen/sp_20" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pick_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="@dimen/dp_8" >
+
+                <Button
+                    android:id="@+id/btn_pick_photo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@drawable/btn_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/photo_picker_a"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="@string/photo_picker"
+                    android:textColor="@color/black_0"
+                    android:textSize="@dimen/sp_20" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="@dimen/dp_8"
+                android:visibility="gone" >
+
+                <Button
+                    android:id="@+id/btn_pick_attchment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@drawable/btn_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/photo_picker_a"
+                    android:drawablePadding="@dimen/dp_8"
+                    android:gravity="center"
+                    android:text="文件上传"
+                    android:textColor="@color/black_0"
+                    android:textSize="@dimen/sp_20" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_btn_del"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="@dimen/dp_8" >
+
+                <Button
+                    android:id="@+id/btn_del"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@drawable/btn_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/list_back_del"
+                    android:textColor="@color/black_0"
+                    android:textSize="@dimen/sp_20" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:background="@drawable/btn_grey"
+                android:text="@string/cancle"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

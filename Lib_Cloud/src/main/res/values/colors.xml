@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 我的网盘-->
+    <color name="sky_drive_pic1">#E62690a8</color>
+    <color name="sky_drive_pic2">#E68f82bc</color>
+    <color name="sky_drive_pic3">#E645c68e</color>
+
+    <color name="sky_drive_item_title">#333333</color>
+    <color name="sky_drive_item_time">#999999</color>
+    <color name="sky_drive_item_green">#FF2fc4ba</color>
+    <color name="sky_drive_item_green_dark">#FF2fa4aa</color>
+
+    <!-- CircularProgressButton-->
+    <color name="cpb_grey">#ffdedede</color>
+    <color name="cpb_blue">#ff0099cc</color>
+    <color name="cpb_blue_dark">#ff00719b</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="cpb_red_dark">#ffcd3a3a</color>
+    <color name="cpb_green">#ff99cc00</color>
+    <color name="cpb_green_dark">#ff6d9b00</color>
+    <color name="cpb_white">@android:color/white</color>
+
+</resources>

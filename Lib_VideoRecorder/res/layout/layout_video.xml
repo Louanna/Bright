@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/video_layout"
+    android:background="@android:color/black"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.movit.platform.framework.widget.RoundImageView
+        android:id="@+id/video_pic"
+        android:scaleType="fitXY"
+        android:background="@drawable/default_pic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/video_play"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_centerInParent="true"
+        android:src="@drawable/video_play" />
+
+    <ImageView
+        android:id="@+id/loading_img"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_centerInParent="true"
+        android:src="@drawable/common_loading4_0"
+        android:visibility="gone" />
+
+    <com.qd.recorder.VideoPlayTextureView
+        android:id="@+id/preview_video"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

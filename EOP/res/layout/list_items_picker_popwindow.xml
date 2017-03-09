@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/popwindow_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44" >
+                <Button
+                    android:id="@+id/btn_take_pending"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@drawable/btn_white" />
+                <TextView
+                    android:id="@+id/text_take_pending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/popwindow_pending"
+                    android:gravity="center"
+                    android:text="@string/popwindow_pending"
+                    android:textColor="@color/black_0"
+                    android:textSize="@dimen/sp_20" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:layout_marginTop="@dimen/dp_8" >
+                <Button
+                    android:id="@+id/btn_take_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_44"
+                    android:background="@drawable/btn_white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@drawable/popwindow_top"
+                    android:gravity="center"
+                    android:text="@string/popwindow_top"
+                    android:textColor="@color/black_0"
+                    android:textSize="@dimen/sp_20" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_24"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_44"
+                android:background="@drawable/btn_grey"
+                android:text="@string/cancle"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_20" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

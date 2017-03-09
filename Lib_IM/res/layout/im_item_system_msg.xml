@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:background="@drawable/list_item_selector"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/list_item_line" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/dp_5"
+            android:paddingTop="@dimen/dp_5">
+
+            <TextView
+                android:id="@+id/system_msg_item_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/list_text_subTitle_for_contact"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/system_msg_item_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/list_text_subTitle_for_contact"
+                android:textSize="@dimen/sp_12" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="@dimen/dp_12"
+            android:background="@color/list_item_line" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dp_56"
+            android:paddingRight="@dimen/dp_12">
+
+            <ImageView
+                android:id="@+id/system_msg_item_icon"
+                android:layout_width="@dimen/dp_44"
+                android:layout_height="@dimen/dp_44"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_toRightOf="@+id/contact_item_checkbox"
+                android:scaleType="fitXY"
+                android:src="@drawable/avatar_female" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_toRightOf="@+id/system_msg_item_icon">
+
+                <TextView
+                    android:id="@+id/system_msg_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/list_text_title_for_contac"
+                    android:textSize="@dimen/sp_15" />
+
+                <TextView
+                    android:id="@+id/system_msg_item_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/system_msg_item_name"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/list_text_title_for_contac"
+                    android:textSize="@dimen/sp_14"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/system_msg_item_option"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/list_text_subTitle_for_contact"
+                    android:textSize="@dimen/sp_13"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/list_item_line" />
+    </LinearLayout>
+</LinearLayout>

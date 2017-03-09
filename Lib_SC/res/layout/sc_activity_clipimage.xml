@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/comm_topbar_style_2" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black" >
+        <com.movit.platform.framework.view.clipview.ClipImageView
+            android:id="@+id/src_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <com.movit.platform.framework.view.clipview.ClipView
+            android:id="@+id/clipview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

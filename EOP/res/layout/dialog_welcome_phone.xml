@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guidePages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:gravity="center" >
+        <ImageView
+            android:id="@+id/welcome_indicator_01"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/im_welcome_page_indicator_focused" />
+        <ImageView
+            android:id="@+id/welcome_indicator_02"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/im_welcome_page_indicator_unfocused" />
+        <ImageView
+            android:id="@+id/welcome_indicator_03"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/im_welcome_page_indicator_unfocused" />
+        <ImageView
+            android:id="@+id/welcome_indicator_04"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/im_welcome_page_indicator_unfocused" />
+        <ImageView
+            android:id="@+id/welcome_indicator_05"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/im_welcome_page_indicator_unfocused" />
+    </LinearLayout>
+</LinearLayout>

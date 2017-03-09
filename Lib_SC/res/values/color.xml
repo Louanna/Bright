@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="chat_bottom_line">#a7a7a7</color>
+    <color name="chat_edittext__color">#111111</color>
+    <color name="chat_time_bg_color">#D5D5D5</color>
+    <color name="chat_send_btn_color">#36B559</color>
+    <color name="chat_voice_cancle_send_color">#b1b1b1</color>
+    <color name="chat_send_btn_bound_color">#31A250</color>
+ 
+    <color name="zone_publish_bottom_line_0_color">#e9e9e9</color>
+    <color name="zone_publish_bottom_line_1_color">#d7dcdd</color>
+    <color name="zone_publish_bottom_bg_cloor">#f9f9f9</color>
+    <color name="zone_publish_category_bg_color">#fbfbfb</color>
+    <color name="zone_publish_category_circle_color">#e4e4e4</color>
+    <color name="zone_publish_confirm_green_color">#20db67</color>
+    <color name="zone_publish_txt_hint_color">#cfcfcf</color>
+    <color name="zone_publish_cut_line_color">#dadada</color>
+    <color name="zone_publish_simi_red_color">#e74b49</color>
+    <color name="zone_msg_top_txt_color">#f4f4f4</color>
+</resources>

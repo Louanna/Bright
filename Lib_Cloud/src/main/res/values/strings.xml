@@ -1,0 +1,30 @@
+<resources>
+    <!-- 我的网盘 -->
+    <string name="sky_drive_my">我的网盘</string>
+    <string name="sky_drive_text1">部门区域</string>
+    <string name="sky_drive_text2">个人区域</string>
+    <string name="sky_drive_text3">共享区域</string>
+    <string name="sky_drive_attribute1">名称：%1$s</string>
+    <string name="sky_drive_attribute2">大小：共%1$d</string>
+    <string name="sky_drive_attribute3">子文件夹数：%1$d</string>
+    <string name="sky_drive_attribute4">文件数：%1$d</string>
+    <string name="sky_drive_open">打开</string>
+    <string name="sky_drive_download">下载</string>
+    <string name="sky_drive_preview">预览</string>
+    <string name="sky_drive_wait">等待</string>
+    <string name="sky_drive_download_failed">下载失败</string>
+    <string name="sky_drive_share_failed">分享失败</string>
+    <string name="sky_drive_share_success">分享成功</string>
+    <string name="sky_drive_folder">文件夹</string>
+    <string name="sky_drive_no_share_self">不能分享给自己！</string>
+    <string name="sky_drive_hint_folder_name">输入文件夹名</string>
+    <string name="sky_drive_new_folder">新建文件夹</string>
+    <string name="sky_drive_need_to_upload">选择需要上传的文件类型</string>
+    <string name="sky_drive_upload_pic">图片</string>
+    <string name="sky_drive_upload_video">视频</string>
+    <string name="sky_drive_upload_file">文件</string>
+    <string name="sky_drive_new_folder_failed">新建文件夹失败！</string>
+    <string name="sky_drive_upload_failed">上传失败！</string>
+    <string name="sky_drive_upload_success">上传成功！</string>
+
+</resources>

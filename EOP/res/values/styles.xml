@@ -1,0 +1,171 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="NumberProgressBar_Default1">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#3498DB</item>
+
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme.Light.NoTitleBar"> <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="CircleImageView">
+        <item name="border_width">0dip</item>
+        <item name="border_color">@color/white</item>
+    </style>
+    <!-- 滑动返回主题 -->
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+    <!-- TabHost标签按钮样式 -->
+    <style name="tab_button_bottom">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:drawablePadding">3dip</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="popwindown_animstyle">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="ImageloadingDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item> <!-- 无边框 -->
+        <item name="android:windowNoTitle">true</item> <!-- 没有标题 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 背景是否半透明 -->
+        <item name="android:windowContentOverlay">@null</item> <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item> <!-- 动画样式 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 背景是否模糊 -->
+    </style>
+
+    <style name="ImageScale" parent="android:Theme.Black.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimHead</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- 设置全屏显示 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="AnimHead" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/head_in</item>
+        <item name="android:windowExitAnimation">@anim/head_out</item>
+    </style>
+
+    <style name="top_group_radio_change_left">
+        <item name="android:background">@drawable/group_create_change_left_selector</item>
+        <item name="android:textColor">@color/top_group_selector</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:text">@string/group_create_cn</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="top_group_radio_change_mid">
+        <item name="android:background">@drawable/group_create_change_mid_selector</item>
+        <item name="android:textColor">@color/top_group_selector</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:text">@string/group_create_en</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="top_group_radio_change_right">
+        <item name="android:background">@drawable/group_create_change_right_selector</item>
+        <item name="android:textColor">@color/top_group_selector</item>
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:text">@string/group_create_attention</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="tourDialogTheme">
+        <item name="android:windowBackground">@color/tour_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">@color/tour_bg</item>
+    </style>
+
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+        <item name="progress_text_size">@dimen/sp_10</item>
+        <item name="progress_text_color">#3498DB</item>
+        <item name="progress_reached_bar_height">@dimen/dp_4</item>
+        <item name="progress_unreached_bar_height">@dimen/dp_3</item>
+    </style>
+
+    <style name="NumberProgressBar_Relax_Blue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="max">100</item>
+        <item name="progress">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#6DBCDB</item>
+        <item name="progress_text_size">@dimen/sp_10</item>
+        <item name="progress_text_color">#6DBCDB</item>
+        <item name="progress_reached_bar_height">@dimen/dp_8</item>
+        <item name="progress_unreached_bar_height">@dimen/dp_4</item>
+    </style>
+
+    <style name="NumberCircleProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="circle_max">100</item>
+        <item name="circle_progress">0</item>
+        <item name="circle_progress_unreached_color">@color/white</item>
+        <item name="circle_progress_reached_color">@color/top_bg_color</item>
+        <item name="circle_progress_circle_radius">@dimen/dp_12</item>
+        <item name="circle_progress_text_size">@dimen/sp_12</item>
+        <item name="circle_progress_text_color">#000000</item>
+        <item name="circle_progress_fill_mode">rotate</item>
+    </style>
+
+
+</resources>

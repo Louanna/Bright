@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lib_IM</string>
+    <string name="list_back_del">删除</string>
+    <string name="cancle">取消</string>
+    <string name="net_error_tip">当前网络不可用，请检查你的网络设置。</string>
+
+    <!-- chat -->
+    <string name="top_chat">聊天</string>
+    <string name="mark_unread">标记未读</string>
+    <string name="mark_read">标记已读</string>
+    <string name="chat_send">发送</string>
+    <string name="chat_voice">按住 说话</string>
+    <string name="voice_cancle_send_move">手指上滑，取消发送</string>
+    <string name="voice_cancle_send_up">松开手指，取消发送</string>
+    <string name="voice_too_short">说话时间太短</string>
+    <string name="chat_for_clean">清空聊天记录</string>
+    <string name="chat_for_search">查找聊天内容</string>
+    <string name="group_chat_del_exit">删除并退出</string>
+    <string name="chat_menu_pic">照片</string>
+    <string name="chat_menu_camera">拍照</string>
+    <string name="chat_menu_mail">邮件</string>
+    <string name="chat_menu_location">定位</string>
+    <string name="chat_menu_vedio">视频</string>
+    <string name="chat_menu_metting">会议</string>
+    <string name="chat_menu_file">文件</string>
+    <string name="chat_menu_moblie_file">手机文件</string>
+    <string name="chat_menu_document">文档管理</string>
+    <string name="chat_menu_send_location">位置</string>
+    <string name="chat_sending">发送中</string>
+    <string name="chat_send_fail">发送失败</string>
+    <string name="chat_send_success">已发送</string>
+    <string name="chat_file_download">已下载</string>
+    <string name="chat_file_no_download">未下载</string>
+    <string name="chat_file_pop_download">下载</string>
+    <string name="chat_file_pop_downloading">下载中</string>
+    <string name="chat_file_pop_open">打开</string>
+    <string name="chat_file_pop_forward">转发</string>
+    <string name="chat_file_pop_collection">收藏</string>
+    <string name="chat_location_fail">获取位置信息失败</string>
+
+    <!-- 修改组名 -->
+    <string name="no_name">未命名</string>
+    <string name="show_room_all_members">群成员</string>
+    <string name="toast_anonymous_group_can_not_see_members">匿名群组不能查看用户！</string>
+    <string name="toast_msg_not_findUser_str">查无此人</string>
+    <string name="room_name">群名称</string>
+    <string name="group_all_members_title_str">群成员</string>
+    <string name="scan_text">对准二维码到框内即可自动扫描</string>
+
+    <string name="select_contacts">选择联系人</string>
+    <string name="clicked_speak">按住 说话</string>
+    <string name="can_not_send_email">匿名群组不能发起邮件!</string>
+    <string name="can_not_more_than_20m">发送的文件大小不能超过20M</string>
+    <string name="can_not_more_than_4m">发送的图片大小不能超过4M</string>
+    <string name="finish">完成</string>
+
+    <string name="im_connect_failed">聊天服务连接失败</string>
+    <string name="all">全部(</string>
+    <string name="person">人)</string>
+
+    <string name="failed_try_again">请求失败!请重试!(</string>
+    <string name="dissolve_success">您已成功解散群组</string>
+    <string name="exit_success">您已退出群组</string>
+    <string name="chat_detail">聊天详情</string>
+    <string name="dissolve_group">解散群组</string>
+    <string name="delete_and_exit">删除并退出</string>
+    <string name="are_you_sure_to_dissolve_group">您确定要解散该群组吗？</string>
+    <string name="are_you_sure_to_exit_group">您确定要退出该群组吗？</string>
+    <string name="can_not_see_user_detail">匿名群组不能查看用户!</string>
+    <string name="admin_removed_you">您已经被管理员移除出群组</string>
+    <string name="exit_group">退出群组!</string>
+    <string name="join_group">加入群组!</string>
+    <string name="remove_group">被移出群组!</string>
+    <string name="admin_dissolve_success">管理员已经解散群组</string>
+    <string name="boy">男</string>
+    <string name="girl">女</string>
+    <string name="group_member_list">群成员列表</string>
+    <string name="call_you">提到了你</string>
+    <string name="group_name_changed">群主题已更改!</string>
+    <string name="my_group">我的群组</string>
+    <string name="phone">手机</string>
+    <string name="telephone">座机</string>
+    <string name="group_name">群名称</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="saving">正在保存&#8230;</string>
+
+    <string name="please_input_right_phone_number">请正确填写手机号码！</string>
+    <string name="please_input_right_telphone_number">请正确填写座机号码！</string>
+    <string name="group_name_empty">群组名不能为空！</string>
+    <string name="modify_group_name">正在修改群名称&#8230;</string>
+    <string name="save_succeed">保存成功！</string>
+    <string name="save_failed">保存失败！</string>
+
+    <string name="admin_define">管理员定义</string>
+    <string name="development">部门</string>
+    <string name="bussiness">业务级</string>
+    <string name="personal">个人</string>
+    <string name="nick">匿名</string>
+    <string name="leave_group">您已不在该群组</string>
+    <string name="clear">清空</string>
+    <string name="notification">消息通知</string>
+    <string name="loading">正在加载&#8230;</string>
+    <string name="invite_join_group">邀请您加入群组</string>
+    <string name="agreed">已同意</string>
+    <string name="beremoved_from_group">已被管理员移出群组</string>
+    <string name="exitd_group">已退出群组</string>
+    <string name="me">我：</string>
+    <string name="content_error">内容不和谐</string>
+    <string name="join">加入</string>
+    <string name="exited">已退出</string>
+    <string name="admin_dissovled">管理员已经解散</string>
+    <string name="refresh_time">刷新时间:</string>
+    <string name="group_chat">发起群聊</string>
+    <string name="nick_group_chat">匿名群聊</string>
+    <string name="video_meeting">视频会议</string>
+    <string name="nick_can_not_see_user_detail">匿名用户不能查看用户详情</string>
+    <string name="send_failed_can_not_resend">发送失败的文件不能转发！</string>
+    <string name="download_office_app_first">您好，请先下载该附件相关的办公软件。</string>
+    <string name="please_download_office_app_first">您好，请先下载该附件相关的办公软件，WPS， Polaris Office 等等</string>
+    <string name="network_break_please_check">当前网络不可用，请检查</string>
+    <string name="sdcard_not_ready">您好，没有找到SD卡,附件无法下载，请确认SD卡是否已插好</string>
+    <string name="downloading_app">正在下载安装程序&#8230;</string>
+    <string name="loading_attach">正在加载附件&#8230;</string>
+    <string name="etc">等</string>
+    <string name="unit_person">人</string>
+
+
+    <attr name="textwidth" format="integer" />
+    <attr name="typeface">
+        <enum name="normal" value="0" />
+        <enum name="sans" value="1" />
+        <enum name="serif" value="2" />
+        <enum name="monospace" value="3" />
+    </attr>
+
+
+    <string name="upload_fail">文件上传失败</string>
+
+</resources>

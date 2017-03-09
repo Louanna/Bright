@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_top_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_44"
+    android:background="@color/top_bg_color">
+
+    <ImageView
+        android:id="@+id/common_top_img_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:src="@drawable/top_back" />
+
+    <TextView
+        android:id="@+id/common_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/common_top_img_left"
+        android:ellipsize="end"
+        android:maxWidth="@dimen/dp_200"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20" />
+
+    <ImageView
+        android:id="@+id/common_top_img_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/common_top_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="关闭"
+        android:drawableLeft="@drawable/topbar_logo"
+        android:drawablePadding="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_16" />
+</RelativeLayout>

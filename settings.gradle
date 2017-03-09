@@ -1,0 +1,14 @@
+// IM Sdk 聊天SDK
+include ':Lib_VideoRecorder',':Lib_IM'
+
+include  ':Lib_Cloud', ':Lib_ShareSDK',':Lib_SC'
+// CommonSdk
+include ':Lib_Common'
+//CONTACTS Sdk 通讯录SDK
+include ':Lib_Contacts'
+
+include ':Lib_Email'
+
+include ':k9mail-library'
+
+include ':EOP'

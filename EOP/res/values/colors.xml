@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="divider_color">#737373</color>
+    <color name="bg_color">#fef7e4</color>
+    <color name="text_color_1">#ff6a58</color>
+    <color name="text_color_2">#770d19</color>
+    <color name="white">#ffffff</color>
+    <color name="white_50">#88ffffff</color>
+    <color name="white_70">#bbffffff</color>
+    <color name="black_0">#262626</color>
+    <color name="red">#df463c</color>
+    <color name="grey">#AEAEAE</color>
+    <color name="circlepageindicator_pagecolor">#aaaaaa</color>
+    <color name="main_top_bottom">#2c5a6d</color>
+    <color name="list_text_title">#101010</color>
+    <color name="list_text_subTitle">#888888</color>
+    <color name="list_text_title_for_contac">#111111</color>
+    <color name="list_text_subTitle_for_contact">#737373</color>
+    <color name="list_text_day">#bfc2c1</color>
+    <color name="list_item_selector_color">#f6fefe</color>
+    <color name="list_item_line">#c6cece</color>
+    <color name="list_item_back_text_1">#cdcdcd</color>
+    <color name="list_item_back_text_2">#df463c</color>
+    <color name="list_item_back_text_3">#61d0e7</color>
+    <color name="list_item_back_text_4">#50cbe5</color>
+    <color name="list_group_bg_color">#e0f5f9</color>
+    <color name="list_group_text_color">#787878</color>
+    <color name="search_text">#4f636d</color>
+    <color name="search_background">#f1f1f1</color>
+    <color name="popwindow_background">#efefef</color>
+    <color name="sidebar_text_color">#555555</color>
+    <color name="chat_bottom_line">#a7a7a7</color>
+    <color name="chat_send_btn_color">#36B559</color>
+    <color name="chat_send_btn_bound_color">#31A250</color>
+    <color name="chat_edittext__color">@color/list_text_title_for_contac</color>
+    <color name="chat_edittext_bound_color">#bdbdbd</color>
+    <color name="chat_voice_bg_color">#f2f2f2</color>
+    <color name="chat_voice_text_color">@color/list_text_subTitle_for_contact</color>
+    <color name="chat_time_text_color">#969696</color>
+    <color name="chat_avatar_bound_color">#bcbcbc</color>
+    <color name="chat_time_bg_color">#D5D5D5</color>
+    <color name="chat_bg_color">#f0f0f0</color>
+    <color name="chat_voice_cancle_send_color">#b1b1b1</color>
+    <color name="user_detail_bg_color">@color/chat_bg_color</color>
+    <color name="user_detail_name_color">@color/list_text_title_for_contac</color>
+    <color name="user_detail_subname_color">@color/list_text_subTitle</color>
+    <color name="user_detail_title_color">#757575</color>
+    <color name="user_detail_content_color">@color/list_text_title_for_contac</color>
+    <color name="user_detail_content_blue_color">#0f848c</color>
+    <color name="user_detail_title_line_color">@color/list_item_line</color>
+    <color name="login_btn_color">#0F3F5C</color>
+    <color name="top_right_txt_color">#00ee00</color>
+    <color name="chat_menu_text_color">#494949</color>
+    <color name="trans_color">#00000000</color>
+    <color name="tour_bg">#f6eceb</color>
+    <color name="zone_publish_bottom_line_0_color">#e9e9e9</color>
+    <color name="zone_publish_bottom_line_1_color">#d7dcdd</color>
+    <color name="zone_publish_bottom_bg_cloor">#f9f9f9</color>
+    <color name="zone_publish_category_bg_color">#fbfbfb</color>
+    <color name="zone_publish_category_circle_color">#e4e4e4</color>
+    <color name="zone_publish_confirm_green_color">#20db67</color>
+    <color name="zone_publish_txt_hint_color">#cfcfcf</color>
+    <color name="zone_publish_cut_line_color">#dadada</color>
+    <color name="zone_publish_simi_red_color">#e74b49</color>
+    <color name="zone_msg_top_txt_color">#f4f4f4</color>
+    <color name="top_bg_color">#e0353b</color>
+    <color name="tab_bar_txt_color">#8d8d8d</color>
+    <color name="office_txt_color">#2e2e2e</color>
+    <!-- 手势 -->
+    <color name="gesture_line">#00ff89</color>
+    <color name="gesture_line_error">#ff2828</color>
+    <!-- 主页工作台名字color -->
+    <color name="worktable_name_color">#95999f</color>
+    <color name="worktable_line_color">#00FFFFFF</color>
+    <color name="worktable_customer_bg_color">#f6f6f9</color>
+    <color name="tab_line_color">#c4c4c5</color>
+    <color name="tab_name_normal_color">#999999</color>
+    <color name="tab_name_pressed_color">@color/top_bg_color</color>
+
+    <!-- zxing -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#b2000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="ea_photo_bg_color">#91e7e7</color>
+
+    <!-- news -->
+    <color name="news_title_color">#333333</color>
+    <color name="news_s_title_color">#999999</color>
+    <color name="news_look_color">#666666</color>
+    <color name="news_bg_time_color">#F3F3F3</color>
+    <color name="news_un_read_color">#7A848E</color>
+
+    <!-- 行政流程-->
+    <color name="process_bg_color">#F5F5F5</color>
+
+</resources>

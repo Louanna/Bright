@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.movit.platform.sc.view.clipview.ClickedRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/m_txt_click_item_selector"
+    android:paddingBottom="@dimen/dp_1"
+    android:paddingTop="@dimen/dp_1" >
+    <com.movit.platform.sc.view.clipview.ClickedSpanTextView
+        android:id="@+id/rich_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_13" />
+</com.movit.platform.sc.view.clipview.ClickedRelativeLayout>

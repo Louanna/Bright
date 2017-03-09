@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.movit.platform.mail.activity.AddAttachmentActivity">
+
+    <RelativeLayout
+        android:id="@+id/common_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_44"
+        android:background="@color/top_bg_color">
+
+        <TextView
+            android:id="@+id/common_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/dp_200"
+            android:singleLine="true"
+            android:text="@string/add_attachment"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_20" />
+
+        <ImageView
+            android:id="@+id/common_top_left"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/top_back" />
+
+        <TextView
+            android:id="@+id/common_top_txt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/add"
+            android:textColor="@color/m_top_right_text_color_selector"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/attachment_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

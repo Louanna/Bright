@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lib_Common</string>
+    <string name="search">Search</string>
+    <string name="contact_str">Contacts</string>
+    <string name="action_settings">Settings</string>
+    <string name="list_back_more">More</string>
+    <string name="popwindow_pending">Mark Commission</string>
+    <string name="popwindow_top">Chat Top</string>
+    <string name="cancle">Cancle</string>
+    <string name="confirm">Confirm</string>
+    <string name="take_txt">Text</string>
+    <string name="photo_camera">Camera</string>
+    <string name="photo_picker">select from Photos</string>
+    <string name="list_back_del">Delete</string>
+
+    <!-- login -->
+    <string name="login_hint_account">Please enter the account</string>
+    <string name="login_hint_passward">Please enter your password</string>
+    <string name="login">Sign in</string>
+    <string name="regist">register</string>
+    <string name="remember_pwd_str">Remember Password</string>
+    <string name="auto_login_str">Auto Login</string>
+
+    <string name="message_invalid_username_password">username or password incorrect</string>
+    <string name="message_server_unavailable">unable to connect to the server</string>
+    <string name="unrecoverable_error">Unknown exception, connect failed</string>
+
+    <!-- user -->
+    <string name="user_empid">Employee No.</string>
+    <string name="user_city">City</string>
+    <string name="user_objname">Department</string>
+    <string name="user_jobtitle">job grade</string>
+    <string name="user_jobtitle_2">Employee No.</string>
+    <string name="user_phone">mobile phone</string>
+    <string name="user_office_phone">landline</string>
+    <string name="user_mail">email box</string>
+    <string name="user_send_msg_btn">Send message</string>
+    <string name="user_setting_info">Personal information setting</string>
+    <string name="user_setting_info_password">change password</string>
+    <string name="user_setting_info_old_password">old password</string>
+    <string name="user_setting_info_new_password">new password</string>
+    <string name="user_setting_info_confirm_password">confirm password</string>
+    <string name="user_setting_info_detail">(change password, mobile phone bind)</string>
+    <string name="user_setting_yinsi">privacy setting</string>
+    <string name="user_setting_yanzheng">verify switch configuration entrance</string>
+    <string name="user_setting_other">other setting</string>
+    <string name="user_setting_clearcache">Manage Storage</string>
+    <string name="user_setting_update">Check update</string>
+    <string name="user_setting_update_orgunition">Update Organization Chart</string>
+    <string name="chat_file_no_forward_self">Do not repost to yourself!</string>
+    <string name="chat_file_forward_to">Are you sure to repost to %1$ ？</string>
+    <!-- 上拉下拉 -->
+    <string name="xlistview_header_hint_normal">drop down to load</string>
+    <string name="xlistview_header_hint_ready">loose to view</string>
+    <string name="xlistview_header_hint_loading">loading&#8230;</string>
+    <string name="xlistview_header_last_time">Last Update Time：</string>
+    <string name="xlistview_footer_hint_normal">View more</string>
+    <string name="xlistview_footer_hint_ready">loose to load more</string>
+    <string name="pull_to_refresh_pull_label">drop down to refresh</string>
+    <string name="pull_to_refresh_release_label">loose to refresh</string>
+    <string name="pull_to_refresh_refreshing_label">Refreshing&#8230;</string>
+    <string name="pull_to_refresh_footer_release_label">loose to load</string>
+    <string name="pull_to_refresh_footer_pull_label">pull up to load more</string>
+    <string name="pull_to_refresh_footer_refreshing_label">Loading&#8230;</string>
+    <string name="pull_to_refresh_footer_nomore">No earlier record</string>
+
+    <string name="no_email_address_for_org">no email address for non-selected contact or selected contact</string>
+    <string name="waiting">Please hold on&#8230;</string>
+    <string name="boy">Boy</string>
+    <string name="girl">Girl</string>
+    <string name="can_not_find_sd">Unfind sdcard</string>
+    <string name="detail">Details</string>
+    <string name="dialog_uploading">Uploading&#8230;</string>
+
+
+    <string name="login_fail">log-in failed</string>
+    <string name="is_login">Logging&#8230;</string>
+    <string name="only_15_people_select">You can select only 15 people every time!</string>
+    <string name="add_group_member">Adding new number&#8230;</string>
+    <string name="create_room">Creating room&#8230;</string>
+    <string name="create_group">created group</string>
+    <string name="ans_group">anonymous group</string>
+    <string name="etc">etc</string>
+    <string name="people">person</string>
+    <string name="create_fail">Sorry, creat failed! Please try it agin.</string>
+    <string name="invite_fail">Sorrry, invite failed!</string>
+    <string name="at_last_one">Please select one contact at least!</string>
+    <string name="downloading_file">Downloading resource file&#8230;</string>
+    <string name="downloading_file_fail">Download resource files failed!</string>
+    <string name="unzip_file_fail">Extract resource files failed!</string>
+    <string name="refresh_success">Refresh successfully!</string>
+    <string name="refresh_fail">Refresh failed!</string>
+    <string name="load_fail">Load failed!</string>
+    <string name="user_detail">detailed information</string>
+    <string name="user_no_phone">The user does not have phone number!</string>
+    <string name="over_time_call_phone">Your today\'s dialing numbers of time is over the limit.</string>
+    <string name="no_phone">No number information!</string>
+    <string name="attention_to_look">View Colleague Moments after following %1$s</string>
+    <string name="attention">followed</string>
+    <string name="attention_fail">Follow failed!</string>
+    <string name="cancel">canceled</string>
+    <string name="cancel_fail">Cancel failed!</string>
+    <string name="no_such_person">No this user, please contact your administrator!</string>
+    <string name="contacts">address book</string>
+    <string name="start_a_group_chat">initiate group chat</string>
+    <string name="start_a_email">initiate email</string>
+    <string name="video_conference">video conference</string>
+    <string name="my_group">my group</string>
+    <string name="organization">organization chart</string>
+    <string name="my_attention">my follows</string>
+
+
+</resources>

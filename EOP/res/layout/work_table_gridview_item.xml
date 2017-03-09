@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/gridview_item_img"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@drawable/zone_pic_default"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"/>
+
+        <TextView
+            android:id="@+id/gridview_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gridview_item_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_12"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/gridview_item_more_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ico_more"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/gridview_item_dian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_45"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@drawable/shape_bg_red_circle"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_11"/>
+
+        <ImageView
+            android:id="@+id/gridview_item_delImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_45"
+            android:layout_marginTop="@dimen/dp_3"
+            android:background="@drawable/icon_add_2"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

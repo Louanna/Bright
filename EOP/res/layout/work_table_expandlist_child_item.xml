@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_selector" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dp_5"
+        android:paddingBottom="@dimen/dp_5"
+        android:paddingLeft="@dimen/dp_13">
+
+        <ImageView
+            android:id="@+id/item_child_avatar"
+            android:layout_width="@dimen/dp_36"
+            android:layout_height="@dimen/dp_36"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:visibility="visible" />
+
+        <com.movitech.EOP.view.widget.SwitchButton
+            android:id="@+id/item_child_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_13" />
+        
+        <TextView
+            android:id="@+id/item_child_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_toRightOf="@id/item_child_avatar"
+            android:layout_toLeftOf="@id/item_child_switch"
+            android:textColor="@color/list_text_subTitle_for_contact"
+            android:textSize="@dimen/sp_14"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

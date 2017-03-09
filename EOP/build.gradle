@@ -1,0 +1,154 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+dependencies {
+    provided fileTree(include: ['*.jar'], dir: 'libs')
+    //compile fileTree(dir: 'libs', include: ['*.jar'])
+    // Contacts Sdk
+    compile project(':Lib_Contacts')
+    compile project(':Lib_ShareSDK')
+    compile project(':Lib_Email')
+    compile project(':Lib_SC')
+    compile 'com.jakewharton:butterknife:8.4.0'
+    compile 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile project(path: ':Lib_IM')
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+
+        brightdev {
+            manifest.srcFile 'channel_dev/AndroidManifest.xml'
+            res.srcDirs = ['channel_dev/res']
+            assets.srcDirs = ['channel_dev/assets'];
+        }
+
+        brightuat {
+            manifest.srcFile 'channel_uat/AndroidManifest.xml'
+            res.srcDirs = ['channel_uat/res']
+            assets.srcDirs = ['channel_uat/assets'];
+        }
+
+        bright {
+            manifest.srcFile 'channel_bright/AndroidManifest.xml'
+            res.srcDirs = ['channel_bright/res']
+            assets.srcDirs = ['channel_bright/assets'];
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+//        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+//        debug.setRoot('build-types/debug')
+        release.setRoot('build-types/release')
+    }
+
+    //批量打包--指定配置文件
+    productFlavors {
+
+        brightdev {
+            applicationId "com.movitech.bright.dev"
+            versionCode 111
+            versionName "1.1.1"
+        }
+
+        brightuat {
+            applicationId "com.movitech.bright.uat"
+            versionCode 100
+            versionName "1.0.0"
+        }
+
+        bright {
+            applicationId "com.movitech.bright"
+            versionCode 102
+            versionName "1.0.2"
+        }
+
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
+    }
+
+    defaultConfig {
+        applicationId "com.movitech.bright.dev"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 100
+        versionName "1.0.0"
+
+        // dex突破65535的限制
+        multiDexEnabled true
+    }
+
+    //签名
+    signingConfigs {
+
+        release {
+            storeFile file("android.keystore")
+            storePassword "eop123456"
+            keyAlias "android.keystore"
+            keyPassword "eop123456"
+        }
+
+    }
+
+    buildTypes {
+
+        release {
+            // 不显示Log
+            //buildConfigField "boolean", "LOG_DEBUG", "false"
+            // 是否进行混淆
+            minifyEnabled false
+            //Zipalign优化
+            //zipAlignEnabled true
+            // 移除无用的resource文件
+            //shrinkResources true
+            //混淆文件的位置
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        // 输出apk名称为eoop_dev_v1.0.0.apk
+                        def fileName = "eoop_${variant.productFlavors[0].name}_v${variant.productFlavors[0].versionName}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+
+    // 移除lint检查的error
+    lintOptions {
+        abortOnError false
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+}

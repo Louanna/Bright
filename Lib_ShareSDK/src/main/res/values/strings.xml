@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_share_to">分享到</string>
+    <string name="share_cancel">取消</string>
+
+    <string name="share_sc">同事圈</string>
+    <string name="share_wechat">微信</string>
+    <string name="share_qq">QQ</string>
+    <string name="share_moments">朋友圈</string>
+</resources>

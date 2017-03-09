@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/news_bg_time_color">
+
+    <include layout="@layout/comm_topbar_style_4"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:paddingLeft="@dimen/dp_5"
+        android:paddingRight="@dimen/dp_5"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/white">
+        <TextView
+            android:id="@+id/unread_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/news_unread_num"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/news_un_read_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_2"
+            android:paddingBottom="@dimen/dp_2"
+            android:paddingLeft="@dimen/dp_8"
+            android:paddingRight="@dimen/dp_8"
+            android:layout_gravity="end|center_vertical"
+            android:text="@string/news_mark_all_read"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/news_s_title_color"
+            android:background="@drawable/shape_btn_bg_gray"/>
+    </FrameLayout>
+
+    <com.movit.platform.framework.widget.xlistview.XListView
+        android:id="@+id/lv_company_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/news_bg_time_color"
+        android:dividerHeight="@dimen/dp_8"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        android:background="@android:color/white"/>
+
+</LinearLayout>

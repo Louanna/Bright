@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp_10"
+        android:descendantFocusability="blocksDescendants"
+        android:background="@color/white">
+
+    <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45"
+            android:src="@drawable/icon_word"
+            android:contentDescription="@null"/>
+
+    <HorizontalScrollView
+        android:id="@+id/hs_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginLeft="@dimen/dp_15"
+        android:layout_marginStart="@dimen/dp_15"
+        android:layout_marginRight="@dimen/dp_90"
+        android:layout_marginEnd="@dimen/dp_90"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:layout_toEndOf="@+id/iv_avatar"
+        android:focusable="false"
+        android:scrollbars="none">
+        <TextView
+            android:id="@+id/tv_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_14"
+            android:text="PNG.png"
+            android:textColor="@color/sky_drive_item_title"/>
+    </HorizontalScrollView>
+
+    <TextView
+            android:id="@+id/tv_file_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hs_file_name"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:layout_toEndOf="@+id/iv_avatar"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_6"
+            android:textSize="@dimen/sp_10"
+            android:text="2016-03-28 14:01:23"
+            android:textColor="@color/sky_drive_item_time"/>
+
+    <TextView
+            android:id="@+id/tv_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hs_file_name"
+            android:layout_toRightOf="@+id/tv_file_time"
+            android:layout_toEndOf="@+id/tv_file_time"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_6"
+            android:textSize="@dimen/sp_10"
+            android:text="9.6M"
+            android:textColor="@color/sky_drive_item_time"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+        <TextView
+                android:visibility="visible"
+                android:id="@+id/tv_file_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_6"
+                android:paddingTop="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_3"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginEnd="@dimen/dp_5"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/sky_drive_item_green"
+                android:background="@drawable/shape_stroke_green"/>
+
+        <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_file_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp_6"
+                android:paddingRight="@dimen/dp_6"
+                android:paddingTop="@dimen/dp_3"
+                android:paddingBottom="@dimen/dp_3"
+                android:text="@string/sky_drive_preview"
+                android:textSize="@dimen/sp_13"
+                android:textColor="@color/sky_drive_item_green"
+                android:background="@drawable/shape_stroke_green"/>
+
+    </LinearLayout>
+
+
+    <com.movit.platform.cloud.view.DonutProgress
+            android:id="@+id/cloud_item_numberCircleProgressBar"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            app:donut_finished_stroke_width="@dimen/dp_4"
+            app:donut_unfinished_stroke_width="@dimen/dp_4"
+            app:donut_text_size="@dimen/sp_10"
+            app:donut_text_color="@color/sky_drive_item_green"
+            app:donut_max="100"
+            app:donut_progress="60"
+            app:donut_finished_color="@color/sky_drive_item_green"
+            app:donut_circle_starting_degree="270"/>
+
+</RelativeLayout>

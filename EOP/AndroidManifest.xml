@@ -1,0 +1,205 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.movitech.EOP.Test"
+    android:versionCode="505"
+    android:versionName="4.0.2">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <application
+        android:name="com.movitech.EOP.application.EOPApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:persistent="true"
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary="com.movit.platform.im,com.movit.platform.sc,com.movit.platform.contacts,com.movit.platform.innerea">
+        <activity
+            android:name="com.movitech.EOP.activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.movitech.EOP.activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <activity
+            android:name="com.movitech.EOP.activity.ServerListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+
+        <!--活动列表页面-->
+        <activity
+            android:name="com.movitech.EOP.module.events.activities.ActivitiesListActivity"
+            android:screenOrientation="portrait" />
+        <!--活动详情页面（活动奖项列表界面）-->
+        <activity
+            android:name="com.movitech.EOP.module.events.awards.AwardsListActivity"
+            android:screenOrientation="portrait" />
+        <!--抽奖人奖项列表页面-->
+        <!--获奖人列表页面-->
+        <activity
+            android:name="com.movitech.EOP.module.events.winners.WinnersListAcivity"
+            android:screenOrientation="portrait" />
+        <!--摇奖页面-->
+        <activity
+            android:name="com.movitech.EOP.module.events.LuckyDrawActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.movitech.EOP.activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.movitech.EOP.module.workbench.activity.CompanyNewsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.activity.SuggestionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.activity.WorkTableActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.activity.ProcessActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.activity.SearchProcessActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.activity.WebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.meeting.activity.MeetingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.movitech.EOP.module.qrcode.ScanActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.movitech.EOP.module.qrcode.EopCodeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.activity.WatingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.activity.WokTableListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.mine.activity.AttentionListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.mine.activity.RePasswordActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.mine.activity.RenameGroupActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.mine.activity.MyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.qrcode.InputCodeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.movitech.EOP.module.qrcode.ManualActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.attendance.activity.AttendanceCreateActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.attendance.activity.AttendanceListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.gesture.GestureActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.gesture.GestureEditActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.gesture.GestureVerifyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.activity.WebViewForDocActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.workbench.activity.WokTableDragListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.movitech.EOP.module.mine.activity.ClipImageActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.movitech.EOP.module.workbench.activity.DownloadActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.movitech.EOP.activity.DownloadActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.movitech.EOP.activity.DialogActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ImageloadingDialogStyle"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <receiver android:name="com.movitech.EOP.broadcast.OffLineReceiver">
+            <intent-filter>
+                <action android:name="simple.login.receive" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.movitech.EOP.poll.PollingService"/>
+
+    </application>
+
+</manifest>

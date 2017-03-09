@@ -1,0 +1,103 @@
+<com.movit.platform.framework.widget.swipeLayout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_member_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_64">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_64"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/group_all_members_recent_del_btn"
+            android:layout_width="@dimen/dp_64"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:background="@color/list_item_back_text_2"
+            android:shadowColor="#7f000000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="1.5"
+            android:text="@string/list_back_del"
+            android:textColor="@android:color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_all_members_front"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_64"
+        android:background="@drawable/m_list_item_selector"
+        android:paddingRight="@dimen/dp_12"
+        android:tag="front"
+        android:visibility="visible" >
+
+        <CheckBox
+            android:id="@+id/group_all_members_item_checkbox"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:background="@drawable/m_tree_checkbox_selector_default"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <com.movit.platform.framework.widget.CircleImageView
+            android:id="@+id/group_all_members_item_icon"
+            android:layout_width="@dimen/dp_44"
+            android:layout_height="@dimen/dp_44"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_toRightOf="@id/group_all_members_item_checkbox"
+             />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_toRightOf="@id/group_all_members_item_icon" >
+
+            <TextView
+                android:id="@+id/group_all_members_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/list_text_title_for_contac"
+                android:textSize="@dimen/sp_16" />
+
+            <TextView
+                android:id="@+id/group_all_members_item_sub_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/group_all_members_item_name"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_toRightOf="@id/group_all_members_item_name"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/list_text_min"
+                android:textSize="@dimen/sp_12"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/group_all_members_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/group_all_members_item_name"
+                android:layout_marginTop="@dimen/dp_6"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/list_text_subTitle"
+                android:textSize="@dimen/sp_12"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.movit.platform.framework.widget.swipeLayout.SwipeLayout>

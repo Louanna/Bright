@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_topbar_style_4" />
+
+    <TextView
+        android:id="@+id/tv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffdada"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_6"
+        android:singleLine="true"
+        android:textColor="#808183"
+        android:textSize="@dimen/sp_12"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dp"
+        android:layout_weight="1.0"
+        android:background="@android:color/white">
+
+        <com.movit.platform.framework.widget.xlistview.XListView
+            android:id="@+id/msg_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50.0dip"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:transcriptMode="normal" />
+
+        <include layout="@layout/im_chat_bottom_input" />
+
+        <TextView
+            android:id="@+id/msg_unread_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right|center"
+            android:layout_marginBottom="55.0dip"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/aio_unread_bg"
+            android:gravity="center_horizontal"
+            android:paddingTop="3.0dip"
+            android:singleLine="true"
+            android:textColor="#ffffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+        <!-- 录音显示UI层 -->
+        <LinearLayout
+            android:id="@+id/chat_voice_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <include layout="@layout/im_popup_chat_voice" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/comm_bottom_face" />
+
+        <include layout="@layout/im_menu_chat_bottom" />
+    </FrameLayout>
+</LinearLayout>

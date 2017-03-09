@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcome5_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBF8FF"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/bgn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_154"
+        android:layout_marginTop="@dimen/dp_160"
+        android:scaleType="fitXY"
+        android:src="@drawable/bgn_5" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/bgn"
+        android:background="#13A1AB" />
+
+    <ImageView
+        android:id="@+id/welcome5_people5"
+        android:layout_width="@dimen/dp_89"
+        android:layout_height="@dimen/dp_123"
+        android:layout_above="@+id/view1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_100"
+        android:scaleType="fitXY"
+        android:src="@drawable/people_5" />
+
+    <ImageView
+        android:id="@+id/welcome5_imageView"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_20"
+        android:src="@drawable/ico_circle" />
+
+    <ImageView
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        android:layout_marginLeft="@dimen/dp_95"
+        android:layout_marginTop="@dimen/dp_76"
+        android:src="@drawable/ico_5" />
+
+    <ImageView
+        android:id="@+id/welcome5_imageView1"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginLeft="@dimen/dp_135"
+        android:layout_marginTop="@dimen/dp_118"
+        android:src="@drawable/ico_5_1" />
+
+    <ImageView
+        android:id="@+id/welcome5_imageView2"
+        android:layout_width="@dimen/dp_36"
+        android:layout_height="@dimen/dp_36"
+        android:layout_marginLeft="@dimen/dp_158"
+        android:layout_marginTop="@dimen/dp_50"
+        android:src="@drawable/ico_5_2" />
+
+    <ImageView
+        android:id="@+id/welcome5_imageView3"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_58"
+        android:layout_marginTop="@dimen/dp_115"
+        android:src="@drawable/ico_5_3" />
+
+    <ImageView
+        android:id="@+id/word"
+        android:layout_width="@dimen/dp_218"
+        android:layout_height="@dimen/dp_80"
+        android:layout_below="@id/bgn"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_40"
+        android:src="@drawable/ico_word_5" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:src="@drawable/welcome_enjoybtn" />
+</RelativeLayout>

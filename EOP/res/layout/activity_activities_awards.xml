@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/acivities_awards_bg"
+    android:orientation="vertical">
+
+    <include  android:id="@+id/topbar" layout="@layout/topbar_style_1"/>
+
+    <ListView
+        android:id="@+id/lv_content"
+        android:layout_below="@+id/topbar"
+        android:layout_above="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1px"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/dp_80"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/text_color_1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="感谢您在立信服务！"/>
+
+</RelativeLayout>

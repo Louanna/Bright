@@ -1,0 +1,30 @@
+<resources>
+    <!-- 我的网盘 -->
+    <string name="sky_drive_my">my storage</string>
+    <string name="sky_drive_text1">Public Area</string>
+    <string name="sky_drive_text2">Personal area</string>
+    <string name="sky_drive_text3">my public area</string>
+    <string name="sky_drive_attribute1">Name：%1$s</string>
+    <string name="sky_drive_attribute2">Size：%1$d</string>
+    <string name="sky_drive_attribute3">the amount of sub-file folders：%1$d</string>
+    <string name="sky_drive_attribute4">the number of files：%1$d</string>
+    <string name="sky_drive_open">Open</string>
+    <string name="sky_drive_download">download</string>
+    <string name="sky_drive_preview">preview</string>
+    <string name="sky_drive_wait">Wait</string>
+    <string name="sky_drive_download_failed">Download failed</string>
+    <string name="sky_drive_share_failed">Share failed</string>
+    <string name="sky_drive_share_success">Share successfully</string>
+    <string name="sky_drive_folder">file folder</string>
+    <string name="sky_drive_no_share_self">Do not share to yourself!</string>
+    <string name="sky_drive_hint_folder_name">enter the file folder name</string>
+    <string name="sky_drive_new_folder">create new file folder</string>
+    <string name="sky_drive_need_to_upload">select the required upload type of files </string>
+    <string name="sky_drive_upload_pic">photo</string>
+    <string name="sky_drive_upload_video">video</string>
+    <string name="sky_drive_upload_file">file</string>
+    <string name="sky_drive_new_folder_failed">Create new file folder failed!</string>
+    <string name="sky_drive_upload_failed">Upload failed!</string>
+    <string name="sky_drive_upload_success">Upload successfully!</string>
+
+</resources>

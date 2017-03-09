@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zone_publish_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_40"
+    android:background="@color/zone_publish_bottom_bg_cloor"
+    android:gravity="center_vertical" >
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentTop="true"
+        android:background="@color/zone_publish_bottom_line_0_color" />
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/zone_publish_bottom_line_1_color" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:orientation="horizontal" >
+        <CheckBox
+            android:id="@+id/zone_publish_bottom_radio_face"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/m_zone_bottom_face_selector" />
+        <CheckBox
+            android:id="@+id/zone_publish_bottom_radio_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:button="@drawable/m_zone_bottom_pic_selector" />
+        <CheckBox
+            android:id="@+id/zone_publish_bottom_radio_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:button="@drawable/m_zone_bottom_at_selector"
+            android:checked="false" />
+        <CheckBox
+            android:id="@+id/zone_publish_bottom_radio_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:button="@drawable/m_zone_bottom_video_selector"
+            android:checked="false" />
+    </LinearLayout>
+</RelativeLayout>

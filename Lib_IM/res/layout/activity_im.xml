@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#58589645"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="聊天首页" />
+
+    <TextView
+        android:id="@+id/tv_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableLeft="@drawable/group_default"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:onClick="onTextViewClicked"
+        android:padding="10dp"
+        android:text="聊天列表" />
+    
+     <TextView
+        android:id="@+id/tv_group_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableLeft="@drawable/group_default"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:onClick="onTextViewClicked"
+        android:padding="10dp"
+        android:text="我的群组" />
+
+    <TextView
+        android:id="@+id/tv_search_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableLeft="@drawable/group_default"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:onClick="onTextViewClicked"
+        android:padding="10dp"
+        android:text="搜索联系人" />
+
+    <TextView
+        android:id="@+id/tv_single_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableLeft="@drawable/group_default"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:onClick="onTextViewClicked"
+        android:padding="10dp"
+        android:text="找人单聊" />
+
+    <TextView
+        android:id="@+id/tv_mult_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:drawableLeft="@drawable/group_default"
+        android:drawablePadding="5dp"
+        android:gravity="center_vertical"
+        android:onClick="onTextViewClicked"
+        android:padding="10dp"
+        android:text="发起群聊" />
+
+</LinearLayout>

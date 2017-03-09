@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/selected_checkbox_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:textColor="?android:attr/textColorPrimary"
+        android:visibility="visible">
+
+        <CheckBox
+            android:id="@+id/selected_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="0dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <com.movit.platform.framework.widget.CircleImageView
+        android:id="@+id/img_head"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="6dp"
+        android:src="@drawable/avatar_email"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:id="@+id/list_item_inner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingBottom="6dp"
+            android:paddingTop="5dip">
+
+            <ImageView
+                android:id="@+id/img_spot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dot_blue"/>
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/img_spot"
+                android:layout_toLeftOf="@+id/date"
+                android:textSize="16sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?android:attr/textColorPrimary" />
+
+            <TextView
+                android:id="@+id/thread_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="4dip"
+                android:focusable="false"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="3dip"
+                android:paddingRight="8dip"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="?android:attr/textColorSecondary" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/subject2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:layout_marginRight="@dimen/dp_5"
+            android:bufferType="spannable"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <TextView
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:layout_marginRight="@dimen/dp_5"
+            android:bufferType="spannable"
+            android:gravity="top"
+            android:textSize="14sp"
+            android:longClickable="false"
+            android:singleLine="false"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/email_preview" />
+
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/flagged_bottom_right"
+        style="?android:attr/starStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/date"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="2dip"
+        android:paddingRight="4dip"
+        android:paddingTop="5dip"
+        android:visibility="visible" />
+
+</LinearLayout>

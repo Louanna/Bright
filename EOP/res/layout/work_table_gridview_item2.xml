@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+    <RelativeLayout
+        android:id="@+id/rl_img"
+        android:layout_width="@dimen/dp_66"
+        android:layout_height="@dimen/dp_66"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/gridview_item_img"
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="@dimen/dp_56"
+            android:layout_centerInParent="true"
+            android:src="@drawable/zone_pic_default"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"/>
+        <TextView
+            android:id="@+id/gridview_item_dian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_marginEnd="@dimen/dp_5"
+            android:background="@drawable/shape_bg_red_circle"
+            android:gravity="center"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_11"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/gridview_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_8"
+        android:ellipsize="end"
+        android:textSize="@dimen/sp_12"
+        android:visibility="visible" />
+</RelativeLayout>

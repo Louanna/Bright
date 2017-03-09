@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_topbar_style_4" />
+
+    <TextView
+        android:id="@+id/tips_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffdada"
+        android:drawableLeft="@drawable/msg_info"
+        android:drawablePadding="@dimen/dp_5"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dp_6"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_6"
+        android:singleLine="true"
+        android:text="下拉可以从服务端同步您60天的历史聊天列表！"
+        android:textColor="#808183"
+        android:textSize="@dimen/sp_12"
+        android:visibility="visible" />
+
+    <include layout="@layout/comm_search" />
+
+    <include
+        layout="@layout/im_net_status_bar"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/recent_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/list_item_line"
+            android:dividerHeight="@dimen/dp_1"
+            android:listSelector="#00000000" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

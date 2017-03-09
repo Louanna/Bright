@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_detail_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    <include layout="@layout/comm_topbar_style_3" />
+    
+    
+    <ListView 
+        android:id="@+id/metting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        ></ListView>
+    
+</LinearLayout>

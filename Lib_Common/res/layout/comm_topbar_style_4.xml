@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_top_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_44"
+    android:background="@color/top_bg_color" >
+
+    <TextView
+        android:id="@+id/common_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/common_top_img_left"
+        android:layout_toEndOf="@+id/common_top_img_left"
+        android:ellipsize="end"
+        android:text="标题"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20" />
+
+    <ImageView
+        android:id="@+id/common_top_img_left"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/top_back" />
+
+    <ImageView
+        android:id="@+id/common_top_img_right"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="match_parent"
+        android:src="@drawable/icon_zuzhi"
+        android:scaleType="centerInside"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/common_top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_40"
+        android:layout_marginEnd="@dimen/dp_40"
+        android:scaleType="centerInside"
+        android:src="@drawable/topbar_logo"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/common_top_close"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="@string/confirm"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_14" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_44"
+    android:background="@color/top_bg_color" >
+    <TextView
+        android:id="@+id/common_top_radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:button="@null"
+        android:checked="true"
+        android:gravity="center"
+        android:text="@string/tab_chat"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_20" />
+    <!--
+    <RadioGroup
+        android:id="@+id/common_top_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+        <RadioButton
+            android:id="@+id/common_top_radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/tab_chat"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+        <RadioButton
+            android:id="@+id/common_top_radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-1dp"
+            android:background="@drawable/top_tab_contact_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/top_contact"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+    </RadioGroup>
+    -->
+    <ImageView
+        android:id="@+id/common_top_img_left"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:src="@drawable/top_back" />
+    <ImageView
+        android:id="@+id/common_top_right"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:gravity="center"
+        android:src="@drawable/group_add"
+        android:visibility="visible" />
+</RelativeLayout>

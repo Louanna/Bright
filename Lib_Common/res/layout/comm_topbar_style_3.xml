@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_top_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_44"
+    android:background="@color/top_bg_color">
+
+    <TextView
+        android:id="@+id/common_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/common_top_left"
+        android:layout_toEndOf="@+id/common_top_left"
+        android:ellipsize="end"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_20" />
+
+    <ImageView
+        android:id="@+id/common_top_left"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/top_back"
+        android:contentDescription="@null"/>
+
+    <ImageView
+        android:id="@+id/common_top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:scaleType="centerInside"
+        android:src="@drawable/topbar_logo"
+        android:contentDescription="@null"/>
+</RelativeLayout>

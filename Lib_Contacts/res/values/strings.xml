@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lib_Contact</string>
+    <string name="search">搜索</string>
+    <string name="contact_str">联系人</string>
+    <string name="action_settings">Settings</string>
+    <string name="list_back_more">更多</string>
+
+    <!-- login -->
+    <string name="login_hint_account">请输入帐号</string>
+    <string name="login_hint_passward">请输入密码</string>
+    <string name="login">登 录</string>
+    <string name="regist">注册</string>
+    <string name="remember_pwd_str">记住密码</string>
+    <string name="auto_login_str">自动登录</string>
+    
+    <string name="message_invalid_username_password">用户名或密码错误</string>
+    <string name="message_server_unavailable">无法连接到服务器</string>
+    <string name="unrecoverable_error">发生未知异常,连接失败</string>
+
+    <!-- user -->
+    <string name="user_empid">员工号</string>
+    <string name="user_city">城市</string>
+    <string name="user_objname">部门</string>
+    <string name="user_jobtitle">职级</string>
+    <string name="user_jobtitle_2">工号</string>
+    <string name="user_phone">手机</string>
+    <string name="user_office_phone">座机</string>
+    <string name="user_mail">邮箱</string>
+    <string name="user_send_msg_btn">发消息</string>
+    <string name="user_setting_info">个人信息设置</string>
+    <string name="user_setting_info_password">修改密码</string>
+    <string name="user_setting_info_old_password">原密码</string>
+    <string name="user_setting_info_new_password">新密码</string>
+    <string name="user_setting_info_confirm_password">确认密码</string>
+    <string name="user_setting_info_detail">(密码修改，手机绑定)</string>
+    <string name="user_setting_yinsi">隐私设置</string>
+    <string name="user_setting_yanzheng">验证开关配置入口</string>
+    <string name="user_setting_other">其他设置</string>
+    <string name="user_setting_clearcache">清除缓存</string>
+    <string name="user_setting_update">检查更新</string>
+    <string name="user_setting_update_orgunition">更新组织架构</string>
+
+
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_50"
+    android:background="@drawable/m_list_item_selector" >
+
+    <CheckBox
+        android:id="@+id/item_group_checkbox"
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="@dimen/dp_15"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:background="@drawable/m_tree_checkbox_selector_default"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <ImageView
+        android:id="@+id/item_group_tree_flag"
+        android:layout_width="@dimen/dp_15"
+        android:layout_height="@dimen/dp_15"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:layout_marginStart="@dimen/dp_2"
+        android:layout_toRightOf="@id/item_group_checkbox"
+        android:layout_toEndOf="@id/item_group_checkbox"
+        android:visibility="visible"
+        android:contentDescription="@null"/>
+
+    <TextView
+        android:id="@+id/item_group_value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_2"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_toRightOf="@id/item_group_tree_flag"
+        android:layout_toEndOf="@id/item_group_tree_flag"
+        android:maxLines="1"
+        android:maxEms="13"
+        android:ellipsize="end"
+        android:text="龚讯(Lawrence)"
+        android:textColor="@color/list_text_title_for_contac"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/item_group_value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_toRightOf="@id/item_group_value1"
+        android:layout_toEndOf="@id/item_group_value1"
+        android:maxLines="1"
+        android:text="30人"
+        android:textColor="@color/list_text_subTitle_for_contact"
+        android:textSize="@dimen/sp_12" />
+
+    <ImageView
+        android:id="@+id/item_group_flagicon"
+        android:layout_width="@dimen/dp_17"
+        android:layout_height="@dimen/dp_17"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:src="@drawable/tree_expand1"
+        android:contentDescription="@null"/>
+
+</RelativeLayout>

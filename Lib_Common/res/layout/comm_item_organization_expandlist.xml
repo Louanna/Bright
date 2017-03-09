@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/dp_50"
+    android:background="@drawable/m_list_item_selector" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <CheckBox
+            android:id="@+id/item_child_checkbox"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:background="@drawable/m_tree_checkbox_selector_default"
+            android:button="@null"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <com.movit.platform.framework.widget.CircleImageView
+            android:id="@+id/item_child_avatar"
+            android:layout_width="@dimen/dp_44"
+            android:layout_height="@dimen/dp_44"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_toRightOf="@id/item_child_checkbox"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/item_child_value1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_toRightOf="@id/item_child_avatar"
+            android:gravity="center"
+            android:text="龚讯"
+            android:textColor="@color/list_text_title_for_contac"
+            android:textSize="@dimen/sp_14" />
+
+        <TextView
+            android:id="@+id/item_child_value2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@id/item_child_value1"
+            android:text="Lawrence"
+            android:textColor="@color/list_text_subTitle_for_contact"
+            android:textSize="@dimen/sp_12"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

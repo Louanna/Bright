@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/comm_topbar_style_2" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/zone_msg_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/zone_msg_top_txt_color"
+            android:paddingBottom="@dimen/dp_8"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingTop="@dimen/dp_8"
+            android:text="共有0条消息，0条未读"
+            android:textColor="@color/user_detail_subname_color"
+            android:textSize="@dimen/sp_12" />
+        <com.movit.platform.framework.widget.xlistview.XListView
+            android:id="@+id/zone_msg_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application>
+
+        <!-- 【必须】 通知service，此选项有助于提高抵达率 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.movitech.bright.dev.PUSH_ACTION" /><!--应用包名.PUSH_ACTION-->
+            </intent-filter>
+        </service>
+
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100252167" />
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="AK1Q6BQD523T" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="N8aSoZAnEbu8y1YTCZ1B7GBQOv5HyTzO"
+            tools:replace="android:value" />
+
+        <meta-data
+            android:name="CHANNEL"
+            android:value="${CHANNEL_VALUE}" />
+
+        <meta-data
+            android:name="USE_EOOP_API"
+            android:value="true" />
+
+        <!--发布服务器-->
+
+        <meta-data
+            android:name="OA_URL"
+            android:value="http://58.210.98.35:8082" />
+
+        <meta-data
+            android:name="SSO_URL"
+            android:value="http://58.210.98.35:8082" />
+
+        <meta-data
+            android:name="CHANNEL_IP"
+            android:value="http://172.19.50.110" />
+
+        <meta-data
+            android:name="CHANNEL_CLOUD_IP"
+            android:value="http://172.19.50.110/eoop-dms/" />
+
+        <meta-data
+            android:name="CHANNEL_PORT"
+            android:value="" />
+
+        <meta-data
+            android:name="CHANNEL_CMS_PORT"
+            android:value="" />
+
+        <meta-data
+            android:name="CHANNEL_XMPP_PORT"
+            android:value="5222" />
+
+        <meta-data
+            android:name="CHANNEL_XMPP"
+            android:value="172.19.50.110" />
+
+        <meta-data
+            android:name="CHANNEL_INTERNALEA"
+            android:value="http://172.18.50.97:8081/api" />
+
+        <meta-data
+            android:name="CHANNEL_TYPE"
+            android:value="brightdev" />
+
+        <meta-data
+            android:name="CHANNEL_VERSION_NAME"
+            android:value="dev" />
+        <meta-data
+            android:name="CHANNEL_SCAN"
+            android:value="false" />
+        <meta-data
+            android:name="CHANNEL_REGIST"
+            android:value="false" />
+        <meta-data
+            android:name="CHANNEL_GOHR"
+            android:value="false" />
+        <meta-data
+            android:name="CHANNEL_ORG_TREE"
+            android:value="false" />
+        <meta-data
+            android:name="CHANNEL_PASSWORD"
+            android:value="false" />
+        <meta-data
+            android:name="CHANNEL_GESTURE"
+            android:value="false" />
+        <meta-data
+            android:name="CHANNEL_CAS"
+            android:value="false" />
+        <meta-data
+            android:name="CHANNEL_ORG_FULL"
+            android:value="false" />
+        <meta-data
+            android:name="CHANNEL_ATTENTION_SEEZONE"
+            android:value="false" />
+        <meta-data
+            android:name="CHANNEL_MEETING"
+            android:value="false" />
+        <meta-data
+            android:name="CHANNEL_VIDEO"
+            android:value="true" />
+        <meta-data
+            android:name="IS_CAS"
+            android:value="false" />
+        <meta-data
+            android:name="CLEAR_MDM"
+            android:value="false" />
+
+        <meta-data
+            android:name="ALLOW_CONFIGURATION"
+            android:value="false" />
+        <meta-data
+            android:name="ALLOW_CONFIGURATION_TOP"
+            android:value="false" />
+
+    </application>
+
+</manifest>

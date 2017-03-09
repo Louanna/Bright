@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/comm_search" />
+
+    <ListView
+        android:id="@+id/group_all_member_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/list_item_line"
+        android:dividerHeight="@dimen/dp_1"
+        android:fadingEdge="none"
+        android:focusable="true"
+        android:footerDividersEnabled="true"
+        android:listSelector="@null"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        android:transcriptMode="disabled" />
+
+    <LinearLayout
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_32"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dp_10"
+            android:text="@string/contact_str"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/sp_16"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/member_search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/list_item_line"
+            android:dividerHeight="@dimen/dp_1"
+            android:fadingEdge="none"
+            android:focusable="true" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

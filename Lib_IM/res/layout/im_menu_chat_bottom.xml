@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_ll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/chat_bg_color"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp_5"
+    android:paddingTop="@dimen/dp_5"
+    android:visibility="gone">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/menu_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_115"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:background="#0000"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <com.movit.platform.framework.view.pageIndicator.CirclePageIndicator xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/menu_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_5"
+        android:visibility="gone"
+        app:fillColor="@color/sidebar_text_color"
+        app:pageColor="@color/circlepageindicator_pagecolor" />
+</LinearLayout>
