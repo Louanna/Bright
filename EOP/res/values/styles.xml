@@ -32,17 +32,7 @@
     <style name="AppTheme" parent="android:Theme.Light.NoTitleBar"> <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
-    <style name="CircleImageView">
-        <item name="border_width">0dip</item>
-        <item name="border_color">@color/white</item>
-    </style>
     <!-- 滑动返回主题 -->
-    <style name="SwipeBackLayout">
-        <item name="edge_size">50dip</item>
-        <item name="shadow_left">@drawable/shadow_left</item>
-        <item name="shadow_right">@drawable/shadow_right</item>
-        <item name="shadow_bottom">@drawable/shadow_bottom</item>
-    </style>
     <!-- TabHost标签按钮样式 -->
     <style name="tab_button_bottom">
         <item name="android:typeface">monospace</item>
@@ -97,37 +87,6 @@
         <item name="android:windowExitAnimation">@anim/head_out</item>
     </style>
 
-    <style name="top_group_radio_change_left">
-        <item name="android:background">@drawable/group_create_change_left_selector</item>
-        <item name="android:textColor">@color/top_group_selector</item>
-        <item name="android:textSize">@dimen/sp_14</item>
-        <item name="android:text">@string/group_create_cn</item>
-        <item name="android:gravity">center</item>
-    </style>
-
-    <style name="top_group_radio_change_mid">
-        <item name="android:background">@drawable/group_create_change_mid_selector</item>
-        <item name="android:textColor">@color/top_group_selector</item>
-        <item name="android:textSize">@dimen/sp_14</item>
-        <item name="android:text">@string/group_create_en</item>
-        <item name="android:gravity">center</item>
-    </style>
-
-    <style name="top_group_radio_change_right">
-        <item name="android:background">@drawable/group_create_change_right_selector</item>
-        <item name="android:textColor">@color/top_group_selector</item>
-        <item name="android:textSize">@dimen/sp_14</item>
-        <item name="android:text">@string/group_create_attention</item>
-        <item name="android:gravity">center</item>
-    </style>
-
-    <style name="tourDialogTheme">
-        <item name="android:windowBackground">@color/tour_bg</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:background">@color/tour_bg</item>
-    </style>
-
     <style name="NumberProgressBar_Default">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
@@ -152,19 +111,6 @@
         <item name="progress_text_color">#6DBCDB</item>
         <item name="progress_reached_bar_height">@dimen/dp_8</item>
         <item name="progress_unreached_bar_height">@dimen/dp_4</item>
-    </style>
-
-    <style name="NumberCircleProgressBar_Default">
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="circle_max">100</item>
-        <item name="circle_progress">0</item>
-        <item name="circle_progress_unreached_color">@color/white</item>
-        <item name="circle_progress_reached_color">@color/top_bg_color</item>
-        <item name="circle_progress_circle_radius">@dimen/dp_12</item>
-        <item name="circle_progress_text_size">@dimen/sp_12</item>
-        <item name="circle_progress_text_color">#000000</item>
-        <item name="circle_progress_fill_mode">rotate</item>
     </style>
 
 

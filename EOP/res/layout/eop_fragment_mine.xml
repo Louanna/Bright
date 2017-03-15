@@ -14,7 +14,6 @@
             android:background="@color/chat_bg_color"
             android:orientation="vertical">
             <RelativeLayout
-                android:id="@+id/home_avatar_bg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/dp_15"
@@ -240,7 +239,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/user_help_Layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_15"
@@ -277,7 +275,6 @@
                     android:gravity="center_vertical">
 
                     <TextView
-                        android:id="@+id/user_clear_mdm"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/dp_5"

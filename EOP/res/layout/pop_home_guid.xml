@@ -5,7 +5,6 @@
     android:orientation="vertical" >
 
     <ImageView
-        android:id="@+id/guid_image1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -14,7 +13,6 @@
         android:src="@drawable/home_guid_1" />
 
     <ImageView
-        android:id="@+id/guid_image2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"

@@ -12,7 +12,6 @@
     <color name="red">#df463c</color>
     <color name="grey">#AEAEAE</color>
     <color name="circlepageindicator_pagecolor">#aaaaaa</color>
-    <color name="main_top_bottom">#2c5a6d</color>
     <color name="list_text_title">#101010</color>
     <color name="list_text_subTitle">#888888</color>
     <color name="list_text_title_for_contac">#111111</color>
@@ -24,8 +23,6 @@
     <color name="list_item_back_text_2">#df463c</color>
     <color name="list_item_back_text_3">#61d0e7</color>
     <color name="list_item_back_text_4">#50cbe5</color>
-    <color name="list_group_bg_color">#e0f5f9</color>
-    <color name="list_group_text_color">#787878</color>
     <color name="search_text">#4f636d</color>
     <color name="search_background">#f1f1f1</color>
     <color name="popwindow_background">#efefef</color>
@@ -49,11 +46,8 @@
     <color name="user_detail_content_color">@color/list_text_title_for_contac</color>
     <color name="user_detail_content_blue_color">#0f848c</color>
     <color name="user_detail_title_line_color">@color/list_item_line</color>
-    <color name="login_btn_color">#0F3F5C</color>
-    <color name="top_right_txt_color">#00ee00</color>
     <color name="chat_menu_text_color">#494949</color>
     <color name="trans_color">#00000000</color>
-    <color name="tour_bg">#f6eceb</color>
     <color name="zone_publish_bottom_line_0_color">#e9e9e9</color>
     <color name="zone_publish_bottom_line_1_color">#d7dcdd</color>
     <color name="zone_publish_bottom_bg_cloor">#f9f9f9</color>
@@ -65,16 +59,13 @@
     <color name="zone_publish_simi_red_color">#e74b49</color>
     <color name="zone_msg_top_txt_color">#f4f4f4</color>
     <color name="top_bg_color">#e0353b</color>
-    <color name="tab_bar_txt_color">#8d8d8d</color>
     <color name="office_txt_color">#2e2e2e</color>
     <!-- 手势 -->
     <color name="gesture_line">#00ff89</color>
     <color name="gesture_line_error">#ff2828</color>
     <!-- 主页工作台名字color -->
-    <color name="worktable_name_color">#95999f</color>
     <color name="worktable_line_color">#00FFFFFF</color>
     <color name="worktable_customer_bg_color">#f6f6f9</color>
-    <color name="tab_line_color">#c4c4c5</color>
     <color name="tab_name_normal_color">#999999</color>
     <color name="tab_name_pressed_color">@color/top_bg_color</color>
 

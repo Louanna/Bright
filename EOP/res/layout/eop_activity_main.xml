@@ -16,7 +16,6 @@
         android:orientation="horizontal">
 
         <com.movitech.EOP.view.MyRadioButton
-            android:id="@+id/radio_msg"
             style="@style/tab_button_bottom"
             android:checked="true"
             android:clickable="true"

@@ -85,7 +85,6 @@
     <dimen name="dp_250">375dp</dimen>
     <dimen name="dp_465">698dp</dimen>
     <dimen name="dp_500">750dp</dimen>
-    <dimen name="dp_510">765dp</dimen>
     <dimen name="dp_515">773dp</dimen>
     <dimen name="dp_520">780dp</dimen>
     <dimen name="dp_540">810dp</dimen>
